@@ -343,6 +343,7 @@
   </Menu>
   <Separator weakSeparator="1"/>
   <Separator weakSeparator="1"/>
+  <Separator weakSeparator="1"/>
   <Menu alreadyVisited="1" name="settings" noMerge="1">
    <text translationDomain="kxmlgui6">&amp;Settings</text>
    <Action name="manage_cache"/>
@@ -407,6 +408,15 @@
   <Action name="edit_redo"/>
   <Action name="edit_copy"/>
   <Action name="edit_paste"/>
+  <Separator name="separator_5" weakSeparator="1"/>
+  <Action name="file_new"/>
+  <Action name="file_open"/>
+  <Action name="file_save"/>
+  <Separator name="separator_6" weakSeparator="1"/>
+  <Action name="edit_undo"/>
+  <Action name="edit_redo"/>
+  <Action name="edit_copy"/>
+  <Action name="edit_paste"/>
  </ToolBar>
  <ToolBar fullWidth="true" name="timelineToolBar" newline="true" noMerge="1" position="bottom">
   <text translationDomain="kdenlive">Timeline Toolbar</text>
@@ -425,10 +435,11 @@
   <Action name="timeline_preview_button"/>
   <Action name="subtitle_tool"/>
   <Separator name="separator_3"/>
-  <Action name="effect_qtblend"/>
   <Action name="seek_clip_start"/>
   <Action name="seek_clip_end"/>
   <Separator name="separator_4"/>
+  <Action name="effect_qtblend"/>
+  <Separator name="separator_5"/>
   <Action name="effect_-20db"/>
   <Action name="effect_-8db"/>
   <Action name="effect_-5db"/>
@@ -444,5 +455,59 @@
  <ActionProperties scheme="Default">
   <Action iconText="Editing" name="load_layout1"/>
   <Action iconText="Audio" name="load_layout2"/>
+  <Action name="open_kcommand_bar" shortcut=""/>
+  <Action name="mix_clip" shortcut=""/>
+  <Action name="view_zoom_in" shortcut="; Ctrl+="/>
+  <Action name="view_zoom_out" shortcut=""/>
+  <Action name="switch_monitor" shortcut=""/>
+  <Action name="focus_timecode" shortcut=""/>
+  <Action name="insert_project_tree" shortcut=""/>
+  <Action name="grab_item" shortcut=""/>
+  <Action name="overwrite_to_in_point" shortcut=""/>
+  <Action name="insert_to_in_point" shortcut=""/>
+  <Action name="remove_extract" shortcut=""/>
+  <Action name="remove_lift" shortcut=""/>
+  <Action name="prerender_timeline_zone" shortcut=""/>
+  <Action name="select_timeline_zone" shortcut=""/>
+  <Action name="deselect_timeline_clip" shortcut=""/>
+  <Action name="select_add_timeline_clip" shortcut=""/>
+  <Action name="select_timeline_transition" shortcut=""/>
+  <Action name="deselect_timeline_transition" shortcut=""/>
+  <Action name="select_add_timeline_transition" shortcut=""/>
+  <Action name="add_marker_guide_quickly" shortcut=""/>
+  <Action name="add_marker_guide_1" shortcut=""/>
+  <Action name="add_marker_guide_2" shortcut=""/>
+  <Action name="add_marker_guide_3" shortcut=""/>
+  <Action name="add_marker_guide_4" shortcut=""/>
+  <Action name="add_marker_guide_5" shortcut=""/>
+  <Action name="add_marker_guide_6" shortcut=""/>
+  <Action name="add_marker_guide_7" shortcut=""/>
+  <Action name="add_marker_guide_8" shortcut=""/>
+  <Action name="add_marker_guide_9" shortcut=""/>
+  <Action name="add_marker_guide_10" shortcut=""/>
+  <Action name="extract_clip" shortcut=""/>
+  <Action name="cut_timeline_clip" shortcut=""/>
+  <Action name="cut_timeline_all_clips" shortcut=""/>
+  <Action name="resize_timeline_clip_start" shortcut=""/>
+  <Action name="resize_timeline_clip_end" shortcut=""/>
+  <Action name="edit_copy" shortcut="Ctrl+C; "/>
+  <Action name="add_subtitle" shortcut=""/>
+  <Action name="file_quit" shortcut=""/>
+  <Action name="options_configure_keybinding" shortcut=""/>
+  <Action name="edit_redo" shortcut=""/>
+  <Action name="audio_record" shortcut=""/>
+  <Action name="sequence_next" shortcut=""/>
+  <Action name="sequence_previous" shortcut=""/>
+  <Action name="help_whats_this" shortcut=""/>
+  <Action name="help_contents" shortcut=""/>
+  <Action name="hamburger_menu" shortcut=""/>
+  <Action name="go_up" shortcut=""/>
+  <Action name="file_new" shortcut=""/>
+  <Action name="collapse_expand" shortcut=""/>
+  <Action name="select_timeline_clip" shortcut=""/>
+  <Action name="options_configure" shortcut=""/>
+  <Action name="edit_paste" shortcut="Ctrl+V; "/>
+  <Action name="delete_space" shortcut="Ctrl+F"/>
+  <Action name="delete_space_all_tracks" shortcut="Ctrl+E"/>
  </ActionProperties>
 </gui>
