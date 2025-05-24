@@ -1,0 +1,21 @@
+<effectgroup id="CLIP_Roundabout" parentIn="214">
+ <effect id="frei0r.select0r">
+  <property name="Operation">0.5</property>
+  <property name="Slope">214=0.513</property>
+  <property name="Delta B / I / I">214=0.701</property>
+  <property name="Delta R / A / Hue">214=0.498</property>
+  <property name="Subspace shape">0.5</property>
+  <property name="Delta G / B / Chroma">214=0.441</property>
+  <property name="Edge mode">0.9</property>
+  <property name="Selection subspace">0</property>
+  <property name="Invert selection">1</property>
+  <property name="Color to select">0x00ff00ff</property>
+ </effect>
+ <effect id="qtblend">
+  <property name="rotate_center">1</property>
+  <property name="distort">0</property>
+  <property name="compositing">0</property>
+  <property name="rotation">214=0</property>
+  <property name="rect">214=-17 129 1728 972 1.000000</property>
+ </effect>
+</effectgroup>

@@ -1,0 +1,39 @@
+<effect type="customVideo" tag="frei0r.select0r" id="CLIP_LostConnection" LC_NUMERIC="C" version="0.4">
+ <name>CLIP_LostConnection</name>
+ <description>Chroma Key with more advanced options (e.g. different color models). Use if basic chroma key is not working effectively.</description>
+ <author>Marko Cebokli</author>
+ <parameter type="color" name="Color to select" value="0x00ff00ff" default="0x00ff00ff">
+  <name>Color to select</name>
+ </parameter>
+ <parameter type="bool" name="Invert selection" value="1" default="1">
+  <name>Invert selection</name>
+ </parameter>
+ <parameter type="list" name="Selection subspace" paramlist="0;0.5;1" value="0" default="0">
+  <paramlistdisplay>RGB,ABI,HCI</paramlistdisplay>
+  <name>Color Model</name>
+ </parameter>
+ <parameter type="list" name="Subspace shape" paramlist="0;0.5;1" value="0.5" default="0.5">
+  <paramlistdisplay>Box,Ellipsoid,Diamond</paramlistdisplay>
+  <name>Shape</name>
+ </parameter>
+ <parameter type="list" name="Edge mode" paramlist="0;0.35;0.6;0.7;0.9" value="0.9" default="0.9">
+  <paramlistdisplay>Hard,Fat,Normal,Skinny,Slope</paramlistdisplay>
+  <name>Edge mode</name>
+ </parameter>
+ <parameter type="animated" name="Delta R / A / Hue" factor="1000" min="0" max="1000" value="0=0.628" default="0.2">
+  <name>Red / Hue Delta</name>
+ </parameter>
+ <parameter type="animated" name="Delta G / B / Chroma" factor="1000" min="0" max="1000" value="0=0.843" default="0.2">
+  <name>Green / Chroma Delta</name>
+ </parameter>
+ <parameter type="animated" name="Delta B / I / I" factor="1000" min="0" max="1000" value="0=0.59" default="0.2">
+  <name>Blue / Intensity Delta</name>
+ </parameter>
+ <parameter type="animated" name="Slope" factor="1000" min="0" max="1000" value="0=0.234" default="0">
+  <name>Soften</name>
+ </parameter>
+ <parameter type="list" name="Operation" paramlist="0;0.3;0.5;0.7;1" value="0.5" default="0.5">
+  <paramlistdisplay>Write on clear,Max,Min,Add,Subtract</paramlistdisplay>
+  <name>Operation</name>
+ </parameter>
+</effect>

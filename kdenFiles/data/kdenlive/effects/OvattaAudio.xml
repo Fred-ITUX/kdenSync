@@ -1,0 +1,32 @@
+<effect type="customAudio" tag="avfilter.bandpass" id="OvattaAudio">
+ <name>OvattaAudio</name>
+ <description>Apply a two-pole Butterworth band-pass filter with central frequency, and (3dB-point) band-width width. The csg option selects a constant skirt gain (peak gain = Q) instead of the default: constant 0dB peak gain. The filter roll off at 6dB per octave (20dB per decade). </description>
+ <author>libavfilter</author>
+ <parameter type="constant" suffix="Hz" name="av.f" min="20" max="20000" value="3000" default="3000">
+  <name>Central Frequency</name>
+ </parameter>
+ <parameter type="bool" name="av.csg" value="0" default="0">
+  <name>Constant skirt gain</name>
+ </parameter>
+ <parameter type="list" name="av.t" paramlist="h;q;o;s;k" value="h" default="h">
+  <paramlistdisplay>Hz,Q-FActor,Octave,Slope,KHz</paramlistdisplay>
+  <name>Method</name>
+ </parameter>
+ <parameter type="constant" name="av.w" decimals="1" min="1" max="9999" value="2002" default="0.5">
+  <name>Filter-width</name>
+ </parameter>
+ <parameter type="constant" name="av.m" decimals="2" min="0" max="1" value="1" default="1">
+  <name>Mix</name>
+ </parameter>
+ <parameter type="bool" name="av.n" value="0" default="0">
+  <name>Normalize</name>
+ </parameter>
+ <parameter type="list" name="av.a" paramlist="di;dii;tdii;latt" value="di" default="di">
+  <paramlistdisplay>di,dii,tdii,latt</paramlistdisplay>
+  <name>Transform type</name>
+ </parameter>
+ <parameter type="list" name="av.r" paramlist="auto;s16;s32;f32;f64" value="auto" default="auto">
+  <paramlistdisplay>Auto,s16,s32,f32,f64</paramlistdisplay>
+  <name>Filter precision</name>
+ </parameter>
+</effect>

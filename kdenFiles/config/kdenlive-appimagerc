@@ -14,11 +14,15 @@ zoom=7
 
 [Recent Dirs]
 KdenliveClipFolder[$e]=$HOME/Videos,$HOME/Documents
-KdenliveProjectsFolder[$e]=$HOME/Videos/Edit/Projects/Scorched2025_Maratona_Pt2/7-Parts/Pt4/2-KdenFiles,$HOME/Videos/Edit/Projects/Scorched2025_Maratona_Pt2/7-Parts/Pt4/2-KdenFiles/,$HOME/Videos/Edit/Projects
+KdenliveProjectsFolder[$e]=$HOME/Videos/Edit/Projects,$HOME/Videos/Edit/Projects/Scorched2025_Maratona_Pt2/7-Parts/Pt4/2-KdenFiles,$HOME/Videos/Edit/Projects/Scorched2025_Maratona_Pt2/7-Parts/Pt4/2-KdenFiles/
 
 [Recent Files]
 File1[$e]=$HOME/Videos/Edit/Projects/Scorched2025_Maratona_Pt2/7-Parts/Pt4/2-KdenFiles/Scorched2025_Maratona_Pt2_Pt4_1.kdenlive
+File2[$e]=$HOME/Videos/Edit/Projects/fixing.kdenlive
+File3[$e]=$HOME/Videos/Edit/Projects/TEMPLATE_2025_05_24.kdenlive
 Name1[$e]=Scorched2025_Maratona_Pt2_Pt4_1.kdenlive
+Name2[$e]=fixing.kdenlive
+Name3[$e]=TEMPLATE_2025_05_24.kdenlive
 
 [Scope_Histogram]
 autoRefresh=true
@@ -59,7 +63,7 @@ rec601=false
 ColorSchemePath=BreezeDark.colors
 
 [bin]
-treeviewheaders=AAAA/wAAAAAAAAABAAAAAAAAAAABAAAAAAAAAAAAAAAJ/gEAAAAIAAAABgAAAC4AAAADAAAANwAAAAcAAAAwAAAAAQAAADcAAAAIAAAAZAAAAAIAAABfAAAABQAAAFAAAAAEAAAALwAAAjMAAAAJAQEAAQAAAAAAAAAAAAAAAGT/////AAAAgQAAAAAAAAAJAAACMwAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAD6AAAAAA+AAAAAA==
+treeviewheaders=AAAA/wAAAAAAAAABAAAAAAAAAAABAAAAAAAAAAAAAAAJ/gEAAAAIAAAABgAAAC4AAAADAAAANwAAAAcAAAAwAAAAAQAAADcAAAAIAAAAZAAAAAIAAABfAAAABQAAAFAAAAAEAAAALwAAAaIAAAAJAQEAAQAAAAAAAAAAAAAAAGT/////AAAAgQAAAAAAAAAJAAABogAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAD6AAAAAA+AAAAAA==
 
 [capture]
 decklink_capturedevice=4294967295
@@ -78,7 +82,7 @@ capturefolder[$e]=$HOME/Videos/Edit/Kden/kdenFiles/captures
 capturetoprojectfolder=2
 currenttmpfolder[$e]=/tmp
 customprojectfolder=true
-defaultprojectfolder[$e]=$HOME/Videos/Edit/Projects
+defaultprojectfolder[$e]=$HOME/Videos/Edit/Kden/ProxyRender
 ffmpegpath[$e]=$HOME/Videos/Edit/Kden/kdenlive/squashfs-root/usr/bin/ffmpeg
 ffplaypath[$e]=$HOME/Videos/Edit/Kden/kdenlive/squashfs-root/usr/bin/ffplay
 ffprobepath[$e]=$HOME/Videos/Edit/Kden/kdenlive/squashfs-root/usr/bin/ffprobe
@@ -103,8 +107,6 @@ externalProxyProfile=./;;.LRV;./;;.MP4
 previewextension=mp4
 previewparams=hwaccel=vaapi hwaccel_device=renderD129 hwaccel_output_format=vaapi vcodec=h264_vaapi vb=30000k
 proxy_profile=11
-proxyalphaextension=mkv
-proxyalphaparams=-vf scale=%width:-2 -f mov -vcodec ffv1 -pix_fmt bgra -c:a aac -ab 128k
 proxyextension=mov
 proxyparams=-init_hw_device vaapi=vaapi0: -filter_hw_device vaapi0 -i -vf scale=%width:-2,format=nv12,hwupload -vsync 1 -c:v h264_vaapi -g 1 -bf 0 -qp 26 -c:a aac -ab 128k
 videotracks=4
