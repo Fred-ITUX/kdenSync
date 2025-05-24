@@ -1,0 +1,143 @@
+[Media Browser]
+Allow Expansion=false
+Decoration position=2
+Show hidden files=false
+Sort by=Name
+Sort directories first=true
+Sort hidden files last=false
+Sort reversed=false
+View Style=DetailTree
+
+[OnlineResources]
+provider=Freesound
+zoom=7
+
+[Recent Dirs]
+KdenliveClipFolder[$e]=$HOME/Videos,$HOME/Documents
+KdenliveProjectsFolder[$e]=$HOME/Videos/Edit/Projects/Scorched2025_Maratona_Pt2/7-Parts/Pt4/2-KdenFiles,$HOME/Videos/Edit/Projects/Scorched2025_Maratona_Pt2/7-Parts/Pt4/2-KdenFiles/,$HOME/Videos/Edit/Projects
+
+[Recent Files]
+File1[$e]=$HOME/Videos/Edit/Projects/Scorched2025_Maratona_Pt2/7-Parts/Pt4/2-KdenFiles/Scorched2025_Maratona_Pt2_Pt4_1.kdenlive
+Name1[$e]=Scorched2025_Maratona_Pt2_Pt4_1.kdenlive
+
+[Scope_Histogram]
+autoRefresh=true
+bEnabled=true
+gEnabled=true
+logScale=false
+rEnabled=true
+realtime=false
+rec601=false
+sEnabled=false
+yEnabled=true
+
+[Scope_RGB Parade]
+autoRefresh=true
+axis=false
+gradref=false
+paintmode=0
+realtime=false
+
+[Scope_Vectorscope]
+75PBox=false
+autoRefresh=true
+axis=false
+backgroundmode=0
+colorspace_ypbpr=false
+gain=1
+iqlines=false
+paintmode=0
+realtime=false
+
+[Scope_Waveform]
+autoRefresh=true
+paintmode=0
+realtime=false
+rec601=false
+
+[UiSettings]
+ColorSchemePath=BreezeDark.colors
+
+[bin]
+treeviewheaders=AAAA/wAAAAAAAAABAAAAAAAAAAABAAAAAAAAAAAAAAAJ/gEAAAAIAAAABgAAAC4AAAADAAAANwAAAAcAAAAwAAAAAQAAADcAAAAIAAAAZAAAAAIAAABfAAAABQAAAFAAAAAEAAAALwAAAjMAAAAJAQEAAQAAAAAAAAAAAAAAAGT/////AAAAgQAAAAAAAAAJAAACMwAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAD6AAAAAA+AAAAAA==
+
+[capture]
+decklink_capturedevice=4294967295
+decklink_extension=mov
+decklink_parameters=vcodec=dnxhd vb=145000k acodec=pcm_s16le threads=%threads
+defaultaudiocapture=Family 17h/19h HD Audio Controller Analog Stereo
+detectedv4ldevices=4294967295
+grab_extension=mov
+grab_parameters=-crf 25 -vcodec libx264 -preset veryfast -threads 0
+v4l_extension=mpg
+v4l_format=4294967295
+v4l_parameters=qscale=4 ab=192k vcodec=mpeg2video acodec=mp2 threads=%threads
+
+[env]
+capturefolder[$e]=$HOME/Videos/Edit/Kden/kdenFiles/captures
+capturetoprojectfolder=2
+currenttmpfolder[$e]=/tmp
+customprojectfolder=true
+defaultprojectfolder[$e]=$HOME/Videos/Edit/Projects
+ffmpegpath[$e]=$HOME/Videos/Edit/Kden/kdenlive/squashfs-root/usr/bin/ffmpeg
+ffplaypath[$e]=$HOME/Videos/Edit/Kden/kdenlive/squashfs-root/usr/bin/ffplay
+ffprobepath[$e]=$HOME/Videos/Edit/Kden/kdenlive/squashfs-root/usr/bin/ffprobe
+kdenliverendererpath[$e]=$HOME/Videos/Edit/Kden/kdenlive/squashfs-root/usr/bin/kdenlive_render
+lastCacheCheck=2025,5,24,11,55,25.113
+libraryfolder[$e]=$HOME/Videos/Edit/Kden/kdenFiles/library
+librarytodefaultfolder=false
+mediainfopath[$e]=/usr/bin/mediainfo
+meltpath[$e]=$HOME/Videos/Edit/Kden/kdenlive/squashfs-root/usr/bin/melt
+mltpath[$e]=$HOME/Videos/Edit/Kden/kdenlive/squashfs-root/usr/share/mlt-7/profiles/
+videofolder[$e]=$HOME/Videos/Edit/VideoRendering
+videotodefaultfolder=2
+
+[misc]
+cleanCacheMonths=1
+
+[project]
+SupportedHWCodecs=h264_vaapi,hevc_vaapi
+audiotracks=4
+enableproxy=true
+externalProxyProfile=./;;.LRV;./;;.MP4
+previewextension=mp4
+previewparams=hwaccel=vaapi hwaccel_device=renderD129 hwaccel_output_format=vaapi vcodec=h264_vaapi vb=30000k
+proxy_profile=11
+proxyalphaextension=mkv
+proxyalphaparams=-vf scale=%width:-2 -f mov -vcodec ffv1 -pix_fmt bgra -c:a aac -ab 128k
+proxyextension=mov
+proxyparams=-init_hw_device vaapi=vaapi0: -filter_hw_device vaapi0 -i -vf scale=%width:-2,format=nv12,hwupload -vsync 1 -c:v h264_vaapi -g 1 -bf 0 -qp 26 -c:a aac -ab 128k
+videotracks=4
+
+[sam]
+sam_system_python_path[$e]=/usr/bin/python3
+
+[sdl]
+blackmagic_output_device=-1
+
+[settings]
+dialogSize=1024,708
+
+[shuttle]
+shuttlebuttons=button0=monitor_pause
+
+[speech]
+samDevice=
+speech_system_python_path[$e]=/usr/bin/python3
+whisperDevice=
+whisperModel=
+
+[timeline]
+trackheight=75
+
+[unmanaged]
+consumerslist=xgl,cbrts,avformat,rtaudio,xml,qglsl,multi,null,sdl2,sdl2_audio,decklink,blipflash
+default_profile=atsc_1080p_60
+guidesCategories=Category 1:0:#9b59b6,Category 2:1:#3daee9,Category 3:2:#1abc9c,Category 4:3:#1cdc9a,Category 5:4:#c9ce3b,Category 6:5:#fdbc4b,Category 7:6:#f39c1f,Category 8:7:#f47750,Category 9:8:#da4453
+monitor_audio=false
+previewScaling=16
+producerslist=framebuffer,ladspa.1221,ladspa.1849,ladspa.1069,ladspa.1086,ladspa.1222,ladspa.1226,ladspa.1844,ladspa.1841,ladspa.1843,ladspa.1066,ladspa.1223,avformat,avformat-novalidate,xml,xml-string,xml-nogl,xml-clip,qimage,qtext,kdenlivetitle,glaxnimate,abnormal,blank,color,colour,consumer,hold,loader,loader-nogl,melt,melt_file,noise,timewarp,tone,decklink,blipflash,count,pgm,subtitle,vorbis,frei0r.ising0r,frei0r.lissajous0r,frei0r.nois0r,frei0r.onecol0r,frei0r.partik0l,frei0r.plasma,frei0r.test_pat_B,frei0r.test_pat_C,frei0r.test_pat_G,frei0r.test_pat_I,frei0r.test_pat_L,frei0r.test_pat_R
+project_fps=60
+
+[version]
+version=25.04.1
