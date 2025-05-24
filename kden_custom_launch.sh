@@ -1,19 +1,17 @@
 #!/bin/bash
 
 
-
-                            #######################################
-                            ####                               ####
-                            ####        25.04.1 WAYLAND        ####
-                            ####                               ####
-                            #######################################
-
+                        ########################################
+                        ####                                ####
+                        ####        22.08.3B WAYLAND        ####
+                        ####                                ####
+                        ########################################
 
 
 #!/bin/bash
 
 #### Paths
-APPIMAGE="$HOME/Videos/Edit/Kden/App/kdenlive-25.04.1-x86_64.AppImage"
+APPIMAGE="$HOME/Videos/Edit/Kden/App/kdenlive-22.08.3b-x86_64.AppImage"
 EXTRACTED_DIR="$HOME/Videos/Edit/Kden/kdenlive"
 SQUASHFS_ROOT="$EXTRACTED_DIR/squashfs-root"
 
@@ -33,8 +31,8 @@ export LADSPA_PATH="$SQUASHFS_ROOT/usr/lib/ladspa"
 export PULSE_SERVER="unix:/run/user/$(id -u)/pulse/native"
 export XDG_RUNTIME_DIR="/run/user/$(id -u)"
 
-#### Ensure Kdenlive uses Wayland
-export QT_QPA_PLATFORM=wayland
+#### Ensure Kdenlive uses Wayland -- not working
+# export QT_QPA_PLATFORM=wayland
 
 #### Launch Kdenlive
 gamemoderun "$SQUASHFS_ROOT/AppRun" "$@"

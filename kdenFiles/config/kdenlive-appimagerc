@@ -1,12 +1,16 @@
-[Media Browser]
-Allow Expansion=false
-Decoration position=2
-Show hidden files=false
-Sort by=Name
-Sort directories first=true
-Sort hidden files last=false
-Sort reversed=false
-View Style=DetailTree
+HDMI-1 DVI-D-1 Window-Maximized 1920x1080 HDMI-1=true
+State=AAAA/wAAAAD9AAAAAQAAAAIAAAeAAAACFPwBAAAADPsAAAAUAHMAYwByAGUAZQBuAGcAcgBhAGIAAAAAAP////8AAACTAQAAA/sAAAAaAGEAdQBkAGkAbwBzAHAAZQBjAHQAcgB1AG0AAAAAAP////8AAABlAQAAA/sAAAAQAGIAaQBuAF8AYwBsAGkAcAAAAAAAAAACNgAAAjYBAAAD/AAAAAAAAAIzAAAAiwD////6AAAAAAEAAAAD+wAAABYAcAByAG8AagBlAGMAdABfAGIAaQBuAQAAAAD/////AAAAXAEAAAP7AAAAHgB0AHIAYQBuAHMAaQB0AGkAbwBuAF8AbABpAHMAdAEAAAAA/////wAAAAQBAAAD+wAAABgAdQBuAGQAbwBfAGgAaQBzAHQAbwByAHkAAAAAAP////8AAABbAQAAA/wAAAI0AAACQgAAAWkA////+gAAAAQCAAAABvsAAAAWAGUAZgBmAGUAYwB0AF8AbABpAHMAdAEAAAAA/////wAAAAMBAAAC+wAAAAoAbQBpAHgAZQByAAAAAfAAAAILAAAAYgEAAAL7AAAAEgB0AGkAbQBlAHIAZQBtAGEAcAAAAAAA/////wAAAFoBAAAC+wAAABIAUwB1AGIAdABpAHQAbABlAHMBAAAAAP////8AAAFEAQAAAvsAAAAYAGUAZgBmAGUAYwB0AF8AcwB0AGEAYwBrAQAAAAD/////AAAAfgEAAAL7AAAAHgBjAGwAaQBwAF8AcAByAG8AcABlAHIAdABpAGUAcwAAAAAA/////wAAAFYBAAAC/AAABHcAAAMJAAABRAD////6AAAAAAIAAAAF+wAAABgAYwBsAGkAcABfAG0AbwBuAGkAdABvAHIBAAAARAAAAc0AAADLAQAAAvsAAAAOAGwAaQBiAHIAYQByAHkAAAAAAP////8AAACUAQAAAvsAAAAeAHAAcgBvAGoAZQBjAHQAXwBtAG8AbgBpAHQAbwByAQAAAL8AAAEsAAAAywEAAAL7AAAAEAB0AGUAeAB0AGUAZABpAHQAAAAAAP////8AAAFrAQAAAvsAAAAYAG4AbwB0AGUAcwBfAHcAaQBkAGcAZQB0AAAAAAD/////AAAAfAEAAAL7AAAAFgB2AGUAYwB0AG8AcgBzAGMAbwBwAGUAAAAAAP////8AAAEmAQAAA/sAAAAQAHcAYQB2AGUAZgBvAHIAbQAAAAAA/////wAAAKQBAAAD+wAAABQAcgBnAGIAXwBwAGEAcgBhAGQAZQAAAAAA/////wAAAJ8BAAAD+wAAABIAaABpAHMAdABvAGcAcgBhAG0AAAAAAP////8AAAFFAQAAA/sAAAAeAG8AbgBsAGkAbgBlAHIAZQBzAG8AdQByAGMAZQBzAAAAAAD/////AAABPAEAAAP7AAAADABnAHUAaQBkAGUAcwAAAAAA/////wAAAAAAAAAAAAAHgAAAAZoAAAAEAAAABAAAAAgAAAAI/AAAAAEAAAACAAAAAgAAABYAbQBhAGkAbgBUAG8AbwBsAEIAYQByAAAAAAD/////AAAAAAAAAAAAAAAYAGUAeAB0AHIAYQBUAG8AbwBsAEIAYQByAAAAAAD/////AAAAAAAAAAA=
+
+[MainWindow]
+HDMI-1 DVI-D-1=DVI-D-1
+HDMI-1 DVI-D-1 Height 1920x1080 DVI-D-1=900
+HDMI-1 DVI-D-1 Width 1920x1080 DVI-D-1=1600
+HDMI-1 DVI-D-1 Window-Maximized 1920x1080 HDMI-1=true
+HDMI-1 DVI-D-1 XPosition 1920x1080 DVI-D-1=248
+HDMI-1 DVI-D-1 YPosition 1920x1080 DVI-D-1=139
+RestorePositionForNextInstance=false
+State=AAAA/wAAAAD9AAAAAQAAAAIAAAeAAAACFPwBAAAADPsAAAAUAHMAYwByAGUAZQBuAGcAcgBhAGIAAAAAAP////8AAACTAQAAA/sAAAAaAGEAdQBkAGkAbwBzAHAAZQBjAHQAcgB1AG0AAAAAAP////8AAABlAQAAA/sAAAAQAGIAaQBuAF8AYwBsAGkAcAAAAAAAAAACNgAAAjYBAAAD/AAAAAAAAAIzAAAAiwD////6AAAAAAEAAAAD+wAAABYAcAByAG8AagBlAGMAdABfAGIAaQBuAQAAAAD/////AAAAXAEAAAP7AAAAHgB0AHIAYQBuAHMAaQB0AGkAbwBuAF8AbABpAHMAdAEAAAAA/////wAAAAQBAAAD+wAAABgAdQBuAGQAbwBfAGgAaQBzAHQAbwByAHkAAAAAAP////8AAABbAQAAA/wAAAI0AAACQgAAAWkA////+gAAAAQCAAAABvsAAAAWAGUAZgBmAGUAYwB0AF8AbABpAHMAdAEAAAAA/////wAAAAMBAAAC+wAAAAoAbQBpAHgAZQByAAAAAfAAAAILAAAAYgEAAAL7AAAAEgB0AGkAbQBlAHIAZQBtAGEAcAAAAAAA/////wAAAFoBAAAC+wAAABIAUwB1AGIAdABpAHQAbABlAHMBAAAAAP////8AAAFEAQAAAvsAAAAYAGUAZgBmAGUAYwB0AF8AcwB0AGEAYwBrAQAAAAD/////AAAAfgEAAAL7AAAAHgBjAGwAaQBwAF8AcAByAG8AcABlAHIAdABpAGUAcwAAAAAA/////wAAAFYBAAAC/AAABHcAAAMJAAABRAD////6AAAAAgIAAAAF+wAAABgAYwBsAGkAcABfAG0AbwBuAGkAdABvAHIBAAAARAAAAc0AAADLAQAAAvsAAAAOAGwAaQBiAHIAYQByAHkAAAAAAP////8AAACUAQAAAvsAAAAeAHAAcgBvAGoAZQBjAHQAXwBtAG8AbgBpAHQAbwByAQAAAL8AAAEsAAAAywEAAAL7AAAAEAB0AGUAeAB0AGUAZABpAHQAAAAAAP////8AAAFrAQAAAvsAAAAYAG4AbwB0AGUAcwBfAHcAaQBkAGcAZQB0AAAAAAD/////AAAAfAEAAAL7AAAAFgB2AGUAYwB0AG8AcgBzAGMAbwBwAGUAAAAAAP////8AAAEmAQAAA/sAAAAQAHcAYQB2AGUAZgBvAHIAbQAAAAAA/////wAAAKQBAAAD+wAAABQAcgBnAGIAXwBwAGEAcgBhAGQAZQAAAAAA/////wAAAJ8BAAAD+wAAABIAaABpAHMAdABvAGcAcgBhAG0AAAAAAP////8AAAFFAQAAA/sAAAAeAG8AbgBsAGkAbgBlAHIAZQBzAG8AdQByAGMAZQBzAAAAAAD/////AAABPAEAAAP7AAAADABnAHUAaQBkAGUAcwAAAAAA/////wAAAAAAAAAAAAAHgAAAAZoAAAAEAAAABAAAAAgAAAAI/AAAAAEAAAACAAAAAgAAABYAbQBhAGkAbgBUAG8AbwBsAEIAYQByAAAAAAD/////AAAAAAAAAAAAAAAYAGUAeAB0AHIAYQBUAG8AbwBsAEIAYQByAAAAAAD/////AAAAAAAAAAA=
+ToolBarsMovable=Disabled
 
 [OnlineResources]
 provider=Freesound
@@ -14,15 +18,11 @@ zoom=7
 
 [Recent Dirs]
 KdenliveClipFolder[$e]=$HOME/Videos,$HOME/Documents
-KdenliveProjectsFolder[$e]=$HOME/Videos/Edit/Projects,$HOME/Videos/Edit/Projects/Scorched2025_Maratona_Pt2/7-Parts/Pt4/2-KdenFiles,$HOME/Videos/Edit/Projects/Scorched2025_Maratona_Pt2/7-Parts/Pt4/2-KdenFiles/
+KdenliveProjectsFolder[$e]=$HOME/Videos/Edit/Projects,$HOME/Documents
 
 [Recent Files]
-File1[$e]=$HOME/Videos/Edit/Projects/Scorched2025_Maratona_Pt2/7-Parts/Pt4/2-KdenFiles/Scorched2025_Maratona_Pt2_Pt4_1.kdenlive
-File2[$e]=$HOME/Videos/Edit/Projects/fixing.kdenlive
-File3[$e]=$HOME/Videos/Edit/Projects/TEMPLATE_2025_05_24.kdenlive
-Name1[$e]=Scorched2025_Maratona_Pt2_Pt4_1.kdenlive
-Name2[$e]=fixing.kdenlive
-Name3[$e]=TEMPLATE_2025_05_24.kdenlive
+File1[$e]=$HOME/Videos/Edit/Projects/test.kdenlive
+Name1[$e]=test.kdenlive
 
 [Scope_Histogram]
 autoRefresh=true
@@ -63,13 +63,13 @@ rec601=false
 ColorSchemePath=BreezeDark.colors
 
 [bin]
-treeviewheaders=AAAA/wAAAAAAAAABAAAAAAAAAAABAAAAAAAAAAAAAAAJ/gEAAAAIAAAABgAAAC4AAAADAAAANwAAAAcAAAAwAAAAAQAAADcAAAAIAAAAZAAAAAIAAABfAAAABQAAAFAAAAAEAAAALwAAAFwAAAAJAQEAAQAAAAAAAAAAAAAAAGT/////AAAAgQAAAAAAAAAJAAAAXAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAD6AAAAAA+AAAAAA==
+treeviewheaders=AAAA/wAAAAAAAAABAAAAAAAAAAABAAAAAAAAAAAAAAAJ/gEAAAAIAAAACAAAAGQAAAAHAAAAMAAAAAYAAAAoAAAABQAAAFEAAAAEAAAAMAAAAAMAAAA4AAAAAgAAAGAAAAABAAAAOAAAAGAAAAAJAQEAAQAAAAAAAAAAAAAAAGT/////AAAAgQAAAAAAAAAJAAAAYAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAD6AAAAAA/
 
 [capture]
 decklink_capturedevice=4294967295
 decklink_extension=mov
 decklink_parameters=vcodec=dnxhd vb=145000k acodec=pcm_s16le threads=%threads
-defaultaudiocapture=Family 17h/19h HD Audio Controller Analog Stereo
+defaultaudiocapture=0
 detectedv4ldevices=4294967295
 grab_extension=mov
 grab_parameters=-crf 25 -vcodec libx264 -preset veryfast -threads 0
@@ -79,74 +79,59 @@ v4l_parameters=qscale=4 ab=192k vcodec=mpeg2video acodec=mp2 threads=%threads
 
 [env]
 capturefolder[$e]=$HOME/Videos/Edit/Kden/kdenFiles/captures
-capturetoprojectfolder=2
-currenttmpfolder[$e]=/tmp
+capturetoprojectfolder=false
+currenttmpfolder[$e]=$HOME/Videos/Edit/Kden/kdenFiles/temp
 customprojectfolder=true
 defaultprojectfolder[$e]=$HOME/Videos/Edit/Kden/ProxyRender
 ffmpegpath[$e]=$HOME/Videos/Edit/Kden/kdenlive/squashfs-root/usr/bin/ffmpeg
 ffplaypath[$e]=$HOME/Videos/Edit/Kden/kdenlive/squashfs-root/usr/bin/ffplay
 ffprobepath[$e]=$HOME/Videos/Edit/Kden/kdenlive/squashfs-root/usr/bin/ffprobe
-kdenliverendererpath[$e]=$HOME/Videos/Edit/Kden/kdenlive/squashfs-root/usr/bin/kdenlive_render
-lastCacheCheck=2025,5,24,11,55,25.113
 libraryfolder[$e]=$HOME/Videos/Edit/Kden/kdenFiles/library
 librarytodefaultfolder=false
 mediainfopath[$e]=/usr/bin/mediainfo
-meltpath[$e]=$HOME/Videos/Edit/Kden/kdenlive/squashfs-root/usr/bin/melt
 mltpath[$e]=$HOME/Videos/Edit/Kden/kdenlive/squashfs-root/usr/share/mlt-7/profiles/
+proxythreads=4
+rendererpath[$e]=$HOME/Videos/Edit/Kden/kdenlive/squashfs-root/usr/bin/melt
 videofolder[$e]=$HOME/Videos/Edit/VideoRendering
 videotodefaultfolder=2
 
 [misc]
-cleanCacheMonths=1
+image_duration=00:00:00:50
 
 [project]
-SupportedHWCodecs=h264_vaapi,hevc_vaapi
-audiotracks=4
+audiotracks=5
 enableproxy=true
 externalProxyProfile=./;;.LRV;./;;.MP4
-previewextension=mp4
-previewparams=hwaccel=vaapi hwaccel_device=renderD129 hwaccel_output_format=vaapi vcodec=h264_vaapi vb=30000k
+preview_profile=19
+previewextension=mkv
+previewparams=vcodec=h264_vaapi g=1 bf=0 profile=578
 proxy_profile=11
 proxyextension=mov
-proxyparams=-init_hw_device vaapi=vaapi0: -filter_hw_device vaapi0 -i -vf scale=%width:-2,format=nv12,hwupload -vsync 1 -c:v h264_vaapi -g 1 -bf 0 -qp 26 -c:a aac -ab 128k
-videotracks=4
-
-[sam]
-sam_system_python_path[$e]=/usr/bin/python3
+proxyparams=-init_hw_device vaapi=vaapi0: -filter_hw_device vaapi0 -i -vf scale=%width:-2,format=nv12,hwupload -codec:v h264_vaapi -g 1 -bf 0 -qp 26 -acodec ac3 -ab 128k
+videotracks=5
 
 [sdl]
 blackmagic_output_device=-1
 
 [settings]
-dialogSize=1024,708
+dialogSize=1024,700
 
 [shuttle]
 shuttlebuttons=button0=monitor_pause
-
-[speech]
-samDevice=
-speech_system_python_path[$e]=/usr/bin/python3
-whisperDevice=
-whisperModel=
 
 [timeline]
 trackheight=50
 
 [unmanaged]
-consumerslist=xgl,cbrts,avformat,rtaudio,xml,qglsl,multi,null,sdl2,sdl2_audio,decklink,blipflash
+consumerslist=xgl,cbrts,avformat,rtaudio,xml,multi,null,sdl2,sdl2_audio,blipflash,qglsl
 default_profile=atsc_1080p_60
-defaultrescaleheight=540
-defaultrescalewidth=960
-favorite_effects=volume,lift_gamma_gain,qtblend,frei0r.select0r,avfilter.zoompan,avfilter.hflip,mask_start-rotoscoping,frei0r.pixeliz0r
-guidesCategories=Category 1:0:#9b59b6,Category 2:1:#3daee9,Category 3:2:#1abc9c,Category 4:3:#1cdc9a,Category 5:4:#c9ce3b,Category 6:5:#fdbc4b,Category 7:6:#f39c1f,Category 8:7:#f47750,Category 9:8:#da4453
-lockedGuides=false
-monitor_audio=false
-monitoraudio=3
-previewScaling=0
-producerslist=framebuffer,ladspa.1221,ladspa.1849,ladspa.1069,ladspa.1086,ladspa.1222,ladspa.1226,ladspa.1844,ladspa.1841,ladspa.1843,ladspa.1066,ladspa.1223,avformat,avformat-novalidate,xml,xml-string,xml-nogl,xml-clip,qimage,qtext,kdenlivetitle,glaxnimate,abnormal,blank,color,colour,consumer,hold,loader,loader-nogl,melt,melt_file,noise,timewarp,tone,decklink,blipflash,count,pgm,subtitle,vorbis,frei0r.ising0r,frei0r.lissajous0r,frei0r.nois0r,frei0r.onecol0r,frei0r.partik0l,frei0r.plasma,frei0r.test_pat_B,frei0r.test_pat_C,frei0r.test_pat_G,frei0r.test_pat_I,frei0r.test_pat_L,frei0r.test_pat_R
-project_fps=60
-renderProfile=WAV
+force_breeze=true
+monitoraudio=5
+previewScaling=16
+producerslist=framebuffer,ladspa.1221,ladspa.1849,ladspa.1069,ladspa.1086,ladspa.1222,ladspa.1226,ladspa.1844,ladspa.1841,ladspa.1843,ladspa.1066,ladspa.1223,avformat,avformat-novalidate,xml,xml-string,xml-nogl,abnormal,color,colour,consumer,hold,loader,melt,melt_file,noise,timewarp,tone,glaxnimate,blipflash,count,pgm,qimage,qtext,kdenlivetitle,vorbis,frei0r.ising0r,frei0r.lissajous0r,frei0r.nois0r,frei0r.onecol0r,frei0r.partik0l,frei0r.plasma,frei0r.test_pat_B,frei0r.test_pat_C,frei0r.test_pat_G,frei0r.test_pat_I,frei0r.test_pat_L,frei0r.test_pat_R
 showtitlebars=false
+use_dark_breeze=true
+widgetstyle=Breeze
 
 [version]
-version=25.04.1
+version=22.08.3

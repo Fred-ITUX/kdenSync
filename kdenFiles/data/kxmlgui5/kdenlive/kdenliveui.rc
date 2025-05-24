@@ -1,8 +1,8 @@
 <!DOCTYPE gui>
-<gui name="kdenlive" translationDomain="kdenlive" version="235">
+<gui translationDomain="kdenlive" name="kdenlive" version="209">
  <MenuBar alreadyVisited="1">
-  <Menu alreadyVisited="1" name="file" noMerge="1">
-   <text translationDomain="kxmlgui6">&amp;File</text>
+  <Menu name="file" alreadyVisited="1" noMerge="1">
+   <text translationDomain="kxmlgui5">&amp;File</text>
    <Action name="file_new"/>
    <Action name="file_open"/>
    <Action name="file_open_recent"/>
@@ -22,8 +22,8 @@
    <Separator weakSeparator="1"/>
    <Action name="file_quit"/>
   </Menu>
-  <Menu alreadyVisited="1" name="edit" noMerge="1">
-   <text translationDomain="kxmlgui6">&amp;Edit</text>
+  <Menu name="edit" alreadyVisited="1" noMerge="1">
+   <text translationDomain="kxmlgui5">&amp;Edit</text>
    <Action name="edit_undo"/>
    <Action name="edit_redo"/>
    <Separator weakSeparator="1"/>
@@ -34,7 +34,7 @@
    <Action name="project_find"/>
    <Action name="project_find_next"/>
   </Menu>
-  <Menu alreadyVisited="1" name="view" noMerge="1">
+  <Menu name="view" alreadyVisited="1" noMerge="1">
    <text translationDomain="kdenlive">View</text>
    <Action name="fullscreen"/>
    <Action name="open_kcommand_bar"/>
@@ -51,15 +51,13 @@
    <Separator/>
    <ActionList name="dock_actions"/>
   </Menu>
-  <Menu alreadyVisited="1" name="go" noMerge="1">
+  <Menu name="go" alreadyVisited="1" noMerge="1">
    <text translationDomain="kdenlive">&amp;Project</text>
    <Action name="add_clip"/>
    <Action name="add_color_clip"/>
    <Action name="add_slide_clip"/>
    <Action name="add_text_clip"/>
    <Action name="add_text_template_clip"/>
-   <Action name="add_animation_clip"/>
-   <Action name="add_playlist_clip"/>
    <Action name="create_folder"/>
    <Menu name="generators" noMerge="1">
     <text translationDomain="kdenlive">Generators</text>
@@ -71,16 +69,10 @@
     <Action name="disable_subtitle"/>
     <Action name="lock_subtitle"/>
     <Separator/>
-    <Action name="manage_subtitle"/>
     <Action name="import_subtitle"/>
     <Action name="export_subtitle"/>
     <Separator/>
     <Action name="audio_recognition"/>
-   </Menu>
-   <Menu name="sequences" noMerge="1">
-    <text translationDomain="kdenlive">Sequences</text>
-    <Action name="sequence_next"/>
-    <Action name="sequence_previous"/>
    </Menu>
    <Separator/>
    <Action name="bin_view_mode"/>
@@ -115,19 +107,6 @@
     <Action name="edit_clip_marker"/>
     <Action name="delete_clip_marker"/>
     <Action name="delete_all_clip_markers"/>
-    <Menu name="marker_category_menu" noMerge="1">
-     <text translationDomain="kdenlive">Add Markers by Category</text>
-     <Action name="add_marker_guide_1"/>
-     <Action name="add_marker_guide_2"/>
-     <Action name="add_marker_guide_3"/>
-     <Action name="add_marker_guide_4"/>
-     <Action name="add_marker_guide_5"/>
-     <Action name="add_marker_guide_6"/>
-     <Action name="add_marker_guide_7"/>
-     <Action name="add_marker_guide_8"/>
-     <Action name="add_marker_guide_9"/>
-     <Action name="add_marker_guide_10"/>
-    </Menu>
    </Menu>
    <Action name="auto_transition"/>
    <Action name="delete_effects"/>
@@ -148,7 +127,6 @@
    <Action name="locate_clip"/>
    <Action name="reload_clip"/>
    <Action name="replace_clip"/>
-   <Action name="replace_in_timeline"/>
    <Action name="duplicate_clip"/>
    <Action name="proxy_clip"/>
    <Menu name="clip_in_timeline" noMerge="1">
@@ -170,7 +148,6 @@
     <Action name="select_timeline_transition"/>
     <Action name="select_add_timeline_transition"/>
     <Action name="deselect_timeline_transition"/>
-    <Action name="select_timeline_zone"/>
    </Menu>
    <Menu name="keyboard_insert" noMerge="1">
     <text translationDomain="kdenlive">Insertion</text>
@@ -207,17 +184,11 @@
     <Action name="save_to_bin"/>
     <Action name="expand_timeline_clip"/>
    </Menu>
-   <Menu name="current_track" noMerge="1">
-    <text translationDomain="kdenlive">&amp;Current track</text>
-    <Action name="delete_all_spaces"/>
-    <Action name="delete_all_clips"/>
-   </Menu>
    <Action name="grab_item"/>
    <Menu name="guide_menu" noMerge="1">
     <text translationDomain="kdenlive">&amp;Guides</text>
     <Action name="add_guide"/>
     <Action name="edit_guide"/>
-    <Action name="search_guide"/>
     <Action name="delete_guide"/>
     <Action name="delete_all_guides"/>
     <Action name="export_guides"/>
@@ -233,20 +204,17 @@
    <Action name="ungroup_clip"/>
    <Action name="save_selection"/>
    <Action name="send_library"/>
-   <Action name="send_sequence"/>
    <Menu name="timeline_tracks" noMerge="1">
     <text translationDomain="kdenlive">Tracks</text>
     <Action name="master_effects"/>
     <Action name="insert_track"/>
     <Action name="delete_track"/>
     <Action name="switch_target_stream"/>
-    <Action name="fit_all_tracks"/>
     <Separator/>
     <Action name="select_track"/>
     <Action name="select_all_tracks"/>
     <Action name="unselect_all_tracks"/>
     <Separator/>
-    <Action name="switch_track_disabled"/>
     <Action name="switch_track_lock"/>
     <Action name="switch_all_track_lock"/>
     <Action name="switch_track_target"/>
@@ -264,7 +232,6 @@
    <Separator/>
    <Action name="show_video_thumbs"/>
    <Action name="show_audio_thumbs"/>
-   <Action name="zoom_audio_thumbs"/>
    <Action name="show_markers"/>
    <Action name="snap"/>
    <Separator/>
@@ -276,7 +243,6 @@
    <text translationDomain="kdenlive">Monitor</text>
    <Action name="monitor_play"/>
    <Action name="monitor_play_zone"/>
-   <Action name="monitor_play_zone_cursor"/>
    <Action name="monitor_loop_zone"/>
    <Action name="monitor_loop_clip"/>
    <Separator/>
@@ -318,7 +284,6 @@
     <Action name="monitor_overlay_fps"/>
     <Action name="monitor_overlay_markers"/>
     <Action name="monitor_overlay_audiothumb"/>
-    <Action name="monitor_overlay_clipjobs"/>
    </Menu>
    <Menu name="monitor_scaling" noMerge="1">
     <text translationDomain="kdenlive">Preview Resolution</text>
@@ -341,13 +306,17 @@
    <Action name="switch_monitor"/>
    <Action name="focus_timecode"/>
   </Menu>
-  <Separator weakSeparator="1"/>
-  <Separator weakSeparator="1"/>
-  <Separator weakSeparator="1"/>
-  <Menu alreadyVisited="1" name="settings" noMerge="1">
-   <text translationDomain="kxmlgui6">&amp;Settings</text>
+  <Menu name="settings" alreadyVisited="1" noMerge="1">
+   <text translationDomain="kxmlgui5">&amp;Settings</text>
    <Action name="manage_cache"/>
    <Action name="run_wizard"/>
+   <Menu name="qt_opengl" noMerge="1">
+    <text translationDomain="kdenlive">OpenGL Backend</text>
+    <Action name="opengl_auto"/>
+    <Action name="opengl_desktop"/>
+    <Action name="opengl_es"/>
+    <Action name="opengl_software"/>
+   </Menu>
    <Action name="force_icon_theme"/>
    <Action name="themes_menu"/>
    <Action name="styles_menu"/>
@@ -364,14 +333,15 @@
    <Action name="options_configure"/>
   </Menu>
   <Separator weakSeparator="1"/>
-  <Menu alreadyVisited="1" name="help" noMerge="1">
-   <text translationDomain="kxmlgui6">&amp;Help</text>
+  <Menu name="help" alreadyVisited="1" noMerge="1">
+   <text translationDomain="kxmlgui5">&amp;Help</text>
    <Action name="help_contents"/>
    <Action name="help_whats_this"/>
    <Action name="open_kcommand_bar"/>
    <Separator weakSeparator="1"/>
    <Action name="reset_config"/>
    <Action name="copy_debuginfo"/>
+   <Separator weakSeparator="1"/>
    <Action name="help_report_bug"/>
    <Separator weakSeparator="1"/>
    <Action name="help_donate"/>
@@ -380,134 +350,32 @@
    <Action name="help_about_kde"/>
   </Menu>
  </MenuBar>
- <ToolBar alreadyVisited="1" name="mainToolBar">
-  <text translationDomain="kxmlgui6">Main Toolbar</text>
+ <ToolBar name="mainToolBar">
+  <text translationDomain="kxmlgui5">Main Toolbar</text>
   <Action name="file_new"/>
   <Action name="file_open"/>
   <Action name="file_save"/>
-  <Separator name="separator_0" weakSeparator="1"/>
-  <Action name="edit_undo"/>
-  <Action name="edit_redo"/>
-  <Action name="edit_copy"/>
-  <Action name="edit_paste"/>
-  <Separator name="separator_1" weakSeparator="1"/>
-  <Action name="file_new"/>
-  <Action name="file_open"/>
-  <Action name="file_save"/>
-  <Separator name="separator_2" weakSeparator="1"/>
-  <Action name="edit_undo"/>
-  <Action name="edit_redo"/>
-  <Action name="edit_copy"/>
-  <Action name="edit_paste"/>
-  <Separator name="separator_3" weakSeparator="1"/>
-  <Action name="file_new"/>
-  <Action name="file_open"/>
-  <Action name="file_save"/>
-  <Separator name="separator_4" weakSeparator="1"/>
-  <Action name="edit_undo"/>
-  <Action name="edit_redo"/>
-  <Action name="edit_copy"/>
-  <Action name="edit_paste"/>
-  <Separator name="separator_5" weakSeparator="1"/>
-  <Action name="file_new"/>
-  <Action name="file_open"/>
-  <Action name="file_save"/>
-  <Separator name="separator_6" weakSeparator="1"/>
+  <Separator weakSeparator="1"/>
   <Action name="edit_undo"/>
   <Action name="edit_redo"/>
   <Action name="edit_copy"/>
   <Action name="edit_paste"/>
  </ToolBar>
- <ToolBar fullWidth="true" name="timelineToolBar" newline="true" noMerge="1" position="bottom">
+ <ToolBar fullWidth="true" name="timelineToolBar" newline="true" position="bottom" noMerge="1">
   <text translationDomain="kdenlive">Timeline Toolbar</text>
-  <Action name="file_open_recent"/>
-  <Action name="file_open"/>
-  <Action name="project_settings"/>
-  <Action name="options_configure"/>
   <Separator name="separator_0"/>
-  <Action name="load_layout1"/>
-  <Action name="load_layout2"/>
-  <Separator name="separator_1"/>
   <Action name="select_tool"/>
   <Action name="razor_tool"/>
-  <Separator name="separator_2"/>
+  <Separator name="separator_1"/>
   <Action name="timeline_timecode"/>
+  <Separator name="separator_2"/>
   <Action name="timeline_preview_button"/>
-  <Action name="subtitle_tool"/>
   <Separator name="separator_3"/>
-  <Action name="seek_clip_start"/>
-  <Action name="seek_clip_end"/>
   <Separator name="separator_4"/>
-  <Action name="effect_qtblend"/>
   <Separator name="separator_5"/>
-  <Action name="effect_-20db"/>
-  <Action name="effect_-8db"/>
-  <Action name="effect_-5db"/>
-  <Action name="effect_-3db"/>
-  <Action name="effect_+10db"/>
-  <Action name="effect_+5db"/>
-  <Action name="effect_+3db"/>
  </ToolBar>
  <ToolBar name="extraToolBar">
   <text translationDomain="kdenlive">Extra Toolbar</text>
   <Action name="project_render_button"/>
  </ToolBar>
- <ActionProperties scheme="Default">
-  <Action iconText="Editing" name="load_layout1"/>
-  <Action iconText="Audio" name="load_layout2"/>
-  <Action name="open_kcommand_bar" shortcut=""/>
-  <Action name="mix_clip" shortcut=""/>
-  <Action name="view_zoom_in" shortcut="; Ctrl+="/>
-  <Action name="view_zoom_out" shortcut=""/>
-  <Action name="switch_monitor" shortcut=""/>
-  <Action name="focus_timecode" shortcut=""/>
-  <Action name="insert_project_tree" shortcut=""/>
-  <Action name="grab_item" shortcut=""/>
-  <Action name="overwrite_to_in_point" shortcut=""/>
-  <Action name="insert_to_in_point" shortcut=""/>
-  <Action name="remove_extract" shortcut=""/>
-  <Action name="remove_lift" shortcut=""/>
-  <Action name="prerender_timeline_zone" shortcut=""/>
-  <Action name="select_timeline_zone" shortcut=""/>
-  <Action name="deselect_timeline_clip" shortcut=""/>
-  <Action name="select_add_timeline_clip" shortcut=""/>
-  <Action name="select_timeline_transition" shortcut=""/>
-  <Action name="deselect_timeline_transition" shortcut=""/>
-  <Action name="select_add_timeline_transition" shortcut=""/>
-  <Action name="add_marker_guide_quickly" shortcut=""/>
-  <Action name="add_marker_guide_1" shortcut=""/>
-  <Action name="add_marker_guide_2" shortcut=""/>
-  <Action name="add_marker_guide_3" shortcut=""/>
-  <Action name="add_marker_guide_4" shortcut=""/>
-  <Action name="add_marker_guide_5" shortcut=""/>
-  <Action name="add_marker_guide_6" shortcut=""/>
-  <Action name="add_marker_guide_7" shortcut=""/>
-  <Action name="add_marker_guide_8" shortcut=""/>
-  <Action name="add_marker_guide_9" shortcut=""/>
-  <Action name="add_marker_guide_10" shortcut=""/>
-  <Action name="extract_clip" shortcut=""/>
-  <Action name="cut_timeline_clip" shortcut=""/>
-  <Action name="cut_timeline_all_clips" shortcut=""/>
-  <Action name="resize_timeline_clip_start" shortcut=""/>
-  <Action name="resize_timeline_clip_end" shortcut=""/>
-  <Action name="edit_copy" shortcut="Ctrl+C; "/>
-  <Action name="add_subtitle" shortcut=""/>
-  <Action name="file_quit" shortcut=""/>
-  <Action name="options_configure_keybinding" shortcut=""/>
-  <Action name="edit_redo" shortcut=""/>
-  <Action name="audio_record" shortcut=""/>
-  <Action name="sequence_next" shortcut=""/>
-  <Action name="sequence_previous" shortcut=""/>
-  <Action name="help_whats_this" shortcut=""/>
-  <Action name="help_contents" shortcut=""/>
-  <Action name="hamburger_menu" shortcut=""/>
-  <Action name="go_up" shortcut=""/>
-  <Action name="file_new" shortcut=""/>
-  <Action name="collapse_expand" shortcut=""/>
-  <Action name="select_timeline_clip" shortcut=""/>
-  <Action name="options_configure" shortcut=""/>
-  <Action name="edit_paste" shortcut="Ctrl+V; "/>
-  <Action name="delete_space" shortcut="Ctrl+F"/>
-  <Action name="delete_space_all_tracks" shortcut="Ctrl+E"/>
- </ActionProperties>
 </gui>
