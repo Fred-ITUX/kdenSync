@@ -1,0 +1,4 @@
+[D-BUS Service]
+Name=org.kde.kglobalaccel
+Exec=/home/appimage/Craft/BinaryFactory/linux-64-gcc/bin/kglobalaccel5
+SystemdService=plasma-kglobalaccel.service

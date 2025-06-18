@@ -7,18 +7,30 @@
                         ####                                ####
                         ########################################
 
-
-#!/bin/bash
+                        
+#######################################
+####        NEXTCLOUD SETUP        ####
+#######################################
 
 #### Paths
-APPIMAGE="$HOME/Videos/Edit/Kden/App/kdenlive-22.08.3b-x86_64.AppImage"
-EXTRACTED_DIR="$HOME/Videos/Edit/Kden/kdenlive"
-SQUASHFS_ROOT="$EXTRACTED_DIR/squashfs-root"
+# EXTRACTED_DIR="$HOME/Videos/Edit/Kden/kdenlive"  
+# SQUASHFS_ROOT="$EXTRACTED_DIR/squashfs-root"
+EXTRACTED_DIR="$HOME/Nextcloud/Kden/Kdenlive/kdenlive"
+SQUASHFS_ROOT="$HOME/Nextcloud/Kden/Kdenlive/kdenlive/squashfs-root"
+
+kdenlivePath="$HOME/Nextcloud/Kden/Kdenlive"
+
 
 #### XDG paths for Kdenlive’s data
-export XDG_CONFIG_HOME="$HOME/Videos/Edit/Kden/kdenFiles/config"
-export XDG_CACHE_HOME="$HOME/Videos/Edit/Kden/kdenFiles/cache"
-export XDG_DATA_HOME="$HOME/Videos/Edit/Kden/kdenFiles/data"
+# export XDG_CONFIG_HOME="$HOME/Videos/Edit/Kden/kdenFiles/config"
+export XDG_CONFIG_HOME="$kdenlivePath/kdenFiles/config"
+
+# export XDG_CACHE_HOME="$HOME/Videos/Edit/Kden/kdenFiles/cache"
+export XDG_CACHE_HOME="$kdenlivePath/kdenFiles/cache"
+
+
+# export XDG_DATA_HOME="$HOME/Videos/Edit/Kden/kdenFiles/data"
+export XDG_DATA_HOME="$kdenlivePath/kdenFiles/data"
 
 
 #### MLT data for metadata manifests, mlt & melt engine
@@ -27,12 +39,13 @@ export MLT_PATH="$SQUASHFS_ROOT/usr/lib/mlt-7"
 export MLT_PROFILES="$SQUASHFS_ROOT/usr/share/mlt-7/profiles"
 export LADSPA_PATH="$SQUASHFS_ROOT/usr/lib/ladspa"
 
-#### Runtime & D-Bus
+
+
+#### Runtime
 export PULSE_SERVER="unix:/run/user/$(id -u)/pulse/native"
 export XDG_RUNTIME_DIR="/run/user/$(id -u)"
 
-#### Ensure Kdenlive uses Wayland -- not working
-# export QT_QPA_PLATFORM=wayland
+
 
 #### Launch Kdenlive
 gamemoderun "$SQUASHFS_ROOT/AppRun" "$@"

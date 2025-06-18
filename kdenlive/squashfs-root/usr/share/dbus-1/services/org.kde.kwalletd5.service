@@ -1,0 +1,3 @@
+[D-BUS Service]
+Name=org.kde.kwalletd5
+Exec=/home/appimage/Craft/BinaryFactory/linux-64-gcc/bin/kwalletd5

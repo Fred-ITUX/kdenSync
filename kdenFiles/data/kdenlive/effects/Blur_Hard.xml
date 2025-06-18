@@ -1,0 +1,15 @@
+<effect type="customVideo" tag="avfilter.avgblur" id="Blur_Hard">
+ <name>Blur_Hard</name>
+ <description>20 - 20 Blur</description>
+ <author>libavfilter</author>
+ <parameter type="constant" name="av.sizeX" factor="1" min="0" max="500" value="20" default="0">
+  <name>X Size</name>
+ </parameter>
+ <parameter type="constant" name="av.sizeY" factor="1" min="0" max="500" value="20" default="0">
+  <name>Y size</name>
+ </parameter>
+ <parameter type="list" name="av.planes" paramlist="0;1;2;3;4;5;6;7" value="7" default="7">
+  <paramlistdisplay>Alpha,Y,U,V,Red,Green,Blue,All</paramlistdisplay>
+  <name>Planes</name>
+ </parameter>
+</effect>

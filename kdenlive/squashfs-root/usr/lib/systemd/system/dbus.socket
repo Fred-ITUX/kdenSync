@@ -1,0 +1,5 @@
+[Unit]
+Description=D-Bus System Message Bus Socket
+
+[Socket]
+ListenStream=/home/appimage/Craft/BinaryFactory/linux-64-gcc/var/run/dbus/system_bus_socket

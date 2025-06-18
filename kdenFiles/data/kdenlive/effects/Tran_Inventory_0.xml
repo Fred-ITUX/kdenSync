@@ -1,0 +1,16 @@
+<effectgroup id="Tran_Inventory_0" parentIn="209728">
+ <effect id="qtblend">
+  <property name="rotate_center">1</property>
+  <property name="distort">0</property>
+  <property name="compositing">0</property>
+  <property name="rotation">209728=0</property>
+  <property name="rect">209728=-239 -418 4416 2484 1.000000</property>
+ </effect>
+ <effect id="qtblend">
+  <property name="rotate_center">1</property>
+  <property name="distort">0</property>
+  <property name="compositing">0</property>
+  <property name="rotation">209728=0</property>
+  <property name="rect">209728=0 0 1920 1080 1</property>
+ </effect>
+</effectgroup>

@@ -1,0 +1,8 @@
+<effect type="customVideo" tag="frei0r.saturat0r" id="Black&amp;WHite">
+ <name>Black&amp;WHite</name>
+ <description>Adjusts the saturation of a source image</description>
+ <author>Jean-Sebastien Senecal</author>
+ <parameter type="animated" name="Saturation" factor="1000" min="1" max="1000" value="922=0.001" default="0.125">
+  <name>Saturation</name>
+ </parameter>
+</effect>
