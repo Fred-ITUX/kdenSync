@@ -1,3 +1,0 @@
-[D-BUS Service]
-Name=org.kde.kcookiejar5
-Exec=/home/appimage/Craft/BinaryFactory/linux-64-gcc/bin/kded5

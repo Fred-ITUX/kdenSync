@@ -1,3 +1,0 @@
-[D-BUS Service]
-Name=org.kde.kioexecd
-Exec=/home/appimage/Craft/BinaryFactory/linux-64-gcc/lib/libexec/kf5/kiod5

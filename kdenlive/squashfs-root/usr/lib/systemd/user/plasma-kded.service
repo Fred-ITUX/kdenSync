@@ -1,9 +1,0 @@
-[Unit]
-Description=KDE Daemon
-PartOf=graphical-session.target
-After=plasma-kcminit.service
-
-[Service]
-ExecStart=/home/appimage/Craft/BinaryFactory/linux-64-gcc/bin/kded5
-BusName=org.kde.kded5
-Slice=session.slice
