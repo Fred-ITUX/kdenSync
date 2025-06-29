@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0" xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks" xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info">
+  <bookmark href="file:///home/federico/Downloads/thumb.png" added="2025-05-26T14:27:03.713000Z" modified="2025-06-08T09:50:10.554000Z" visited="2025-06-08T09:50:10.554000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="org.kde.kdenlive" exec="kdenlive %F %u" modified="2025-06-08T09:50:10.554000Z" count="7"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/federico/Downloads/1.png" added="2025-05-27T08:33:32.805000Z" modified="2025-06-08T08:19:37.240000Z" visited="2025-06-08T08:19:37.240000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="org.kde.kdenlive" exec="kdenlive %F %u" modified="2025-06-08T08:19:37.240000Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/federico/Downloads/2.png" added="2025-05-27T08:33:54.515000Z" modified="2025-05-27T08:34:11.057000Z" visited="2025-05-27T08:34:11.057000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="org.kde.kdenlive" exec="kdenlive %F %u" modified="2025-05-27T08:34:11.057000Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/federico/Downloads/thumb_1.png" added="2025-05-27T09:22:09.539000Z" modified="2025-06-28T18:28:26.488000Z" visited="2025-06-28T18:28:26.488000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="org.kde.kdenlive" exec="kdenlive %F %u" modified="2025-06-28T18:28:26.488000Z" count="9"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/federico/Downloads/tentacle.png" added="2025-05-27T14:09:45.299000Z" modified="2025-05-27T14:09:45.299000Z" visited="2025-05-27T14:09:45.299000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="org.kde.kdenlive" exec="kdenlive %F %u" modified="2025-05-27T14:09:45.299000Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/federico/Downloads/DoomEternal_1-f050426.png" added="2025-05-27T20:45:33.394000Z" modified="2025-05-27T20:45:33.394000Z" visited="2025-05-27T20:45:33.394000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="org.kde.kdenlive" exec="kdenlive %F %u" modified="2025-05-27T20:45:33.394000Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/federico/Downloads/thumb_22.png" added="2025-05-29T12:58:18.138000Z" modified="2025-06-01T08:28:15.777000Z" visited="2025-06-01T08:28:15.777000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="org.kde.kdenlive" exec="kdenlive %F %u" modified="2025-06-01T08:28:15.777000Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/federico/Downloads/thumb_33.png" added="2025-05-29T12:59:11.553000Z" modified="2025-05-29T12:59:11.553000Z" visited="2025-05-29T12:59:11.553000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="org.kde.kdenlive" exec="kdenlive %F %u" modified="2025-05-29T12:59:11.553000Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/federico/Downloads/meme_enchanter.png" added="2025-05-30T20:08:47.893000Z" modified="2025-05-30T20:08:47.893000Z" visited="2025-05-30T20:08:47.893000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="org.kde.kdenlive" exec="kdenlive %F %u" modified="2025-05-30T20:08:47.893000Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/federico/Downloads/thumb1.png" added="2025-05-30T20:30:16.093000Z" modified="2025-05-30T20:30:16.093000Z" visited="2025-05-30T20:30:16.093000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="org.kde.kdenlive" exec="kdenlive %F %u" modified="2025-05-30T20:30:16.093000Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/federico/Downloads/thumb2.png" added="2025-05-30T20:30:44.567000Z" modified="2025-05-30T20:30:44.567000Z" visited="2025-05-30T20:30:44.567000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="org.kde.kdenlive" exec="kdenlive %F %u" modified="2025-05-30T20:30:44.567000Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/federico/Downloads/thumb3.png" added="2025-05-30T20:31:06.805000Z" modified="2025-05-30T20:31:06.805000Z" visited="2025-05-30T20:31:06.805000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="org.kde.kdenlive" exec="kdenlive %F %u" modified="2025-05-30T20:31:06.805000Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/federico/Downloads/thumb_2.png" added="2025-05-31T11:13:31.854000Z" modified="2025-06-28T18:28:54.286000Z" visited="2025-06-28T18:28:54.286000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="org.kde.kdenlive" exec="kdenlive %F %u" modified="2025-06-28T18:28:54.286000Z" count="8"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/federico/Downloads/thumb_4.png" added="2025-05-31T16:07:26.220000Z" modified="2025-06-06T15:05:01.718000Z" visited="2025-06-06T15:05:01.718000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="org.kde.kdenlive" exec="kdenlive %F %u" modified="2025-06-06T15:05:01.718000Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/federico/Downloads/thumb_3.png" added="2025-05-31T16:08:18.310000Z" modified="2025-06-28T18:29:33.925000Z" visited="2025-06-28T18:29:33.925000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="org.kde.kdenlive" exec="kdenlive %F %u" modified="2025-06-28T18:29:33.925000Z" count="6"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/federico/Downloads/thumb_5.png" added="2025-05-31T16:50:55.932000Z" modified="2025-06-06T15:05:56.707000Z" visited="2025-06-06T15:05:56.707000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="org.kde.kdenlive" exec="kdenlive %F %u" modified="2025-06-06T15:05:56.707000Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/federico/Downloads/thumb_6.png" added="2025-05-31T16:55:00.738000Z" modified="2025-06-06T15:07:08.865000Z" visited="2025-06-06T15:07:08.865000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="org.kde.kdenlive" exec="kdenlive %F %u" modified="2025-06-06T15:07:08.865000Z" count="5"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/federico/Downloads/thumb_7.png" added="2025-05-31T17:03:01.890000Z" modified="2025-06-06T15:08:40.155000Z" visited="2025-06-06T15:08:40.155000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="org.kde.kdenlive" exec="kdenlive %F %u" modified="2025-06-06T15:08:40.155000Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/federico/Downloads/thumb_8_2.png" added="2025-05-31T17:03:42.375000Z" modified="2025-05-31T17:03:42.375000Z" visited="2025-05-31T17:03:42.375000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="org.kde.kdenlive" exec="kdenlive %F %u" modified="2025-05-31T17:03:42.375000Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/federico/Downloads/thumb_9.png" added="2025-05-31T17:09:26.948000Z" modified="2025-06-06T15:11:41.632000Z" visited="2025-06-06T15:11:41.632000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="org.kde.kdenlive" exec="kdenlive %F %u" modified="2025-06-06T15:11:41.632000Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/federico/Downloads/thumb_10.png" added="2025-05-31T17:10:09.797000Z" modified="2025-06-06T15:13:03.262000Z" visited="2025-06-06T15:13:03.262000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="org.kde.kdenlive" exec="kdenlive %F %u" modified="2025-06-06T15:13:03.262000Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/federico/Downloads/thumb_11.png" added="2025-05-31T18:39:52.810000Z" modified="2025-06-06T15:14:04.478000Z" visited="2025-06-06T15:14:04.478000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="org.kde.kdenlive" exec="kdenlive %F %u" modified="2025-06-06T15:14:04.478000Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/federico/Downloads/thumb_12.png" added="2025-05-31T18:48:32.777000Z" modified="2025-06-06T15:17:31.976000Z" visited="2025-06-06T15:17:31.976000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="org.kde.kdenlive" exec="kdenlive %F %u" modified="2025-06-06T15:17:31.976000Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/federico/Downloads/thumb_13.png" added="2025-05-31T18:50:38.264000Z" modified="2025-06-06T15:18:40.314000Z" visited="2025-06-06T15:18:40.314000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="org.kde.kdenlive" exec="kdenlive %F %u" modified="2025-06-06T15:18:40.314000Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/federico/Downloads/thumb_14.png" added="2025-05-31T18:52:14.858000Z" modified="2025-05-31T18:52:14.858000Z" visited="2025-05-31T18:52:14.858000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="org.kde.kdenlive" exec="kdenlive %F %u" modified="2025-05-31T18:52:14.858000Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/federico/Downloads/thumb_0.png" added="2025-06-04T07:46:40.431000Z" modified="2025-06-28T18:24:35.723000Z" visited="2025-06-28T18:24:35.723000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="org.kde.kdenlive" exec="kdenlive %F %u" modified="2025-06-28T18:24:35.723000Z" count="5"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/federico/Downloads/thumb_8.png" added="2025-06-04T07:57:14.426000Z" modified="2025-06-06T15:10:00.615000Z" visited="2025-06-06T15:10:00.615000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="org.kde.kdenlive" exec="kdenlive %F %u" modified="2025-06-06T15:10:00.615000Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/federico/Downloads/what_meme.png" added="2025-06-04T17:25:47.169000Z" modified="2025-06-04T17:25:47.169000Z" visited="2025-06-04T17:25:47.169000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="org.kde.kdenlive" exec="kdenlive %F %u" modified="2025-06-04T17:25:47.169000Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/federico/Downloads/chat.png" added="2025-06-04T18:38:10.061000Z" modified="2025-06-04T18:39:20.786000Z" visited="2025-06-04T18:39:20.786000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="org.kde.kdenlive" exec="kdenlive %F %u" modified="2025-06-04T18:39:20.786000Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/federico/Downloads/thumb_pg.png" added="2025-06-17T12:22:35.230000Z" modified="2025-06-17T12:22:35.230000Z" visited="2025-06-17T12:22:35.230000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="org.kde.kdenlive" exec="kdenlive %F %u" modified="2025-06-17T12:22:35.230000Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/federico/Downloads/try.png" added="2025-06-24T12:29:43.195000Z" modified="2025-06-24T13:31:19.557000Z" visited="2025-06-24T13:31:19.557000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="org.kde.kdenlive" exec="kdenlive %F %u" modified="2025-06-24T13:31:19.557000Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/federico/Downloads/magic_hamburger.png" added="2025-06-26T14:24:34.508000Z" modified="2025-06-26T14:24:34.508000Z" visited="2025-06-26T14:24:34.508000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="org.kde.kdenlive" exec="kdenlive %F %u" modified="2025-06-26T14:24:34.508000Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/federico/Downloads/basket_frame.png" added="2025-06-28T12:56:54.240000Z" modified="2025-06-28T12:56:54.240000Z" visited="2025-06-28T12:56:54.240000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="org.kde.kdenlive" exec="kdenlive %F %u" modified="2025-06-28T12:56:54.240000Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>

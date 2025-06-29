@@ -1,0 +1,208 @@
+HDMI-1 DVI-D-1=HDMI-1
+HDMI-1 DVI-D-1 Height 1920x1080 DVI-D-1=1080
+HDMI-1 DVI-D-1 Height 1920x1080 HDMI-1=1080
+HDMI-1 DVI-D-1 Width 1920x1080 DVI-D-1=1920
+HDMI-1 DVI-D-1 Width 1920x1080 HDMI-1=1920
+HDMI-1 DVI-D-1 Window-Maximized 1920x1080 HDMI-1=true
+HDMI-1 DVI-D-1 XPosition 1920x1080 DVI-D-1=1920
+HDMI-1 DVI-D-1 XPosition 1920x1080 HDMI-1=1920
+HDMI-1 DVI-D-1 YPosition 1920x1080 DVI-D-1=0
+HDMI-1 DVI-D-1 YPosition 1920x1080 HDMI-1=0
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAQAAAAIAAAeAAAACFPwBAAAADPsAAAAUAHMAYwByAGUAZQBuAGcAcgBhAGIAAAAAAP////8AAACTAQAAA/sAAAAaAGEAdQBkAGkAbwBzAHAAZQBjAHQAcgB1AG0AAAAAAP////8AAABlAQAAA/sAAAAQAGIAaQBuAF8AYwBsAGkAcAAAAAAAAAACNgAAAjYBAAAD/AAAAAAAAAIzAAAAXAD////6AAAAAAEAAAAD+wAAABYAcAByAG8AagBlAGMAdABfAGIAaQBuAQAAAAD/////AAAAXAEAAAP7AAAAHgB0AHIAYQBuAHMAaQB0AGkAbwBuAF8AbABpAHMAdAAAAAAA/////wAAAAQBAAAD+wAAABgAdQBuAGQAbwBfAGgAaQBzAHQAbwByAHkAAAAAAP////8AAABbAQAAA/wAAAI0AAACQQAAAIsA////+gAAAAQCAAAABvsAAAAWAGUAZgBmAGUAYwB0AF8AbABpAHMAdAEAAAAA/////wAAAAMBAAAC+wAAAAoAbQBpAHgAZQByAAAAAfAAAAILAAAAYgEAAAL7AAAAEgB0AGkAbQBlAHIAZQBtAGEAcAAAAAAA/////wAAAFoBAAAC+wAAABIAUwB1AGIAdABpAHQAbABlAHMAAAAAAP////8AAAFEAQAAAvsAAAAYAGUAZgBmAGUAYwB0AF8AcwB0AGEAYwBrAQAAAAD/////AAAAfgEAAAL7AAAAHgBjAGwAaQBwAF8AcAByAG8AcABlAHIAdABpAGUAcwAAAAAA/////wAAAFYBAAAC/AAABHYAAAMKAAABRAD////6AAAAAgIAAAAF+wAAABgAYwBsAGkAcABfAG0AbwBuAGkAdABvAHIBAAAARAAAAc0AAADLAQAAAvsAAAAOAGwAaQBiAHIAYQByAHkAAAAAAP////8AAACUAQAAAvsAAAAeAHAAcgBvAGoAZQBjAHQAXwBtAG8AbgBpAHQAbwByAQAAAL8AAAEsAAAAywEAAAL7AAAAEAB0AGUAeAB0AGUAZABpAHQAAAAAAP////8AAAFrAQAAAvsAAAAYAG4AbwB0AGUAcwBfAHcAaQBkAGcAZQB0AAAAAAD/////AAAAfAEAAAL7AAAAFgB2AGUAYwB0AG8AcgBzAGMAbwBwAGUAAAAAAP////8AAAEmAQAAA/sAAAAQAHcAYQB2AGUAZgBvAHIAbQAAAAAA/////wAAAKQBAAAD+wAAABQAcgBnAGIAXwBwAGEAcgBhAGQAZQAAAAAA/////wAAAJ8BAAAD+wAAABIAaABpAHMAdABvAGcAcgBhAG0AAAAAAP////8AAAFFAQAAA/sAAAAeAG8AbgBsAGkAbgBlAHIAZQBzAG8AdQByAGMAZQBzAAAAAAD/////AAABPAEAAAP7AAAADABnAHUAaQBkAGUAcwAAAAAA/////wAAAAAAAAAAAAAHgAAAAbsAAAAEAAAABAAAAAgAAAAI/AAAAAEAAAACAAAAAgAAABYAbQBhAGkAbgBUAG8AbwBsAEIAYQByAAAAAAD/////AAAAAAAAAAAAAAAYAGUAeAB0AHIAYQBUAG8AbwBsAEIAYQByAAAAAAD/////AAAAAAAAAAA=
+
+[KFileDialog Settings]
+Recent Files[$e]=file:$HOME/Downloads/thumb_0.png,file:$HOME/Downloads/thumb_3.png,file:$HOME/Downloads/thumb_2.png,file:$HOME/Downloads/thumb_1.png
+Recent URLs[$e]=file:$HOME/Downloads/,file:$HOME/
+detailViewIconSize=16
+
+[MainWindow]
+:0.0=:0.0
+:0.0 Height 1920x1080 :0.0=849
+:0.0 Width 1920x1080 :0.0=1552
+:0.0 XPosition 1920x1080 :0.0=271
+:0.0 YPosition 1920x1080 :0.0=76
+DP-3 HDMI-1=DP-3
+DP-3 HDMI-1 Height 1920x1080 DP-3=1043
+DP-3 HDMI-1 Height 1920x1080 HDMI-1=768
+DP-3 HDMI-1 Width 1920x1080 DP-3=1920
+DP-3 HDMI-1 Width 1920x1080 HDMI-1=1263
+DP-3 HDMI-1 Window-Maximized 1920x1080 HDMI-1=true
+DP-3 HDMI-1 XPosition 1920x1080 DP-3=1920
+DP-3 HDMI-1 XPosition 1920x1080 HDMI-1=522
+DP-3 HDMI-1 YPosition 1920x1080 DP-3=37
+DP-3 HDMI-1 YPosition 1920x1080 HDMI-1=49
+DVI-D-1=DVI-D-1
+DVI-D-1 Height 1920x1080 DVI-D-1=845
+DVI-D-1 Width 1920x1080 DVI-D-1=1421
+DVI-D-1 XPosition 1920x1080 DVI-D-1=258
+DVI-D-1 YPosition 1920x1080 DVI-D-1=105
+HDMI-1=HDMI-1
+HDMI-1 DP-3=DP-3
+HDMI-1 DP-3 Window-Maximized 1920x1080 DP-3=true
+HDMI-1 DP-3 XPosition 1920x1080 DP-3=0
+HDMI-1 DP-3 YPosition 1920x1080 DP-3=0
+HDMI-1 DVI-D-1=HDMI-1
+HDMI-1 DVI-D-1 Height 1920x1080 DVI-D-1=1043
+HDMI-1 DVI-D-1 Height 1920x1080 HDMI-1=1008
+HDMI-1 DVI-D-1 Width 1920x1080 DVI-D-1=1920
+HDMI-1 DVI-D-1 Width 1920x1080 HDMI-1=1920
+HDMI-1 DVI-D-1 XPosition 1920x1080 DVI-D-1=0
+HDMI-1 DVI-D-1 XPosition 1920x1080 HDMI-1=1920
+HDMI-1 DVI-D-1 YPosition 1920x1080 DVI-D-1=0
+HDMI-1 DVI-D-1 YPosition 1920x1080 HDMI-1=37
+HDMI-1 Height 1920x1080 HDMI-1=898
+HDMI-1 Width 1920x1080 HDMI-1=1717
+HDMI-1 XPosition 1920x1080 HDMI-1=69
+HDMI-1 YPosition 1920x1080 HDMI-1=114
+MenuBar=Disabled
+RestorePositionForNextInstance=false
+State=AAAA/wAAAAD9AAAAAQAAAAIAAAeAAAACFPwBAAAADPsAAAAUAHMAYwByAGUAZQBuAGcAcgBhAGIAAAAAAP////8AAACTAQAAA/sAAAAaAGEAdQBkAGkAbwBzAHAAZQBjAHQAcgB1AG0AAAAAAP////8AAABlAQAAA/sAAAAQAGIAaQBuAF8AYwBsAGkAcAAAAAAAAAACNgAAAjYBAAAD/AAAAAAAAAIzAAAAXAD////6AAAAAAEAAAAD+wAAABYAcAByAG8AagBlAGMAdABfAGIAaQBuAQAAAAD/////AAAAXAEAAAP7AAAAHgB0AHIAYQBuAHMAaQB0AGkAbwBuAF8AbABpAHMAdAAAAAAA/////wAAAAQBAAAD+wAAABgAdQBuAGQAbwBfAGgAaQBzAHQAbwByAHkAAAAAAP////8AAABbAQAAA/wAAAI0AAACQQAAAIsA////+gAAAAQCAAAABvsAAAAWAGUAZgBmAGUAYwB0AF8AbABpAHMAdAEAAAAA/////wAAAAMBAAAC+wAAAAoAbQBpAHgAZQByAAAAAfAAAAILAAAAYgEAAAL7AAAAEgB0AGkAbQBlAHIAZQBtAGEAcAAAAAAA/////wAAAFoBAAAC+wAAABIAUwB1AGIAdABpAHQAbABlAHMAAAAAAP////8AAAFEAQAAAvsAAAAYAGUAZgBmAGUAYwB0AF8AcwB0AGEAYwBrAQAAAAD/////AAAAfgEAAAL7AAAAHgBjAGwAaQBwAF8AcAByAG8AcABlAHIAdABpAGUAcwAAAAAA/////wAAAFYBAAAC/AAABHYAAAMKAAABRAD////6AAAAAgIAAAAF+wAAABgAYwBsAGkAcABfAG0AbwBuAGkAdABvAHIBAAAARAAAAc0AAADLAQAAAvsAAAAOAGwAaQBiAHIAYQByAHkAAAAAAP////8AAACUAQAAAvsAAAAeAHAAcgBvAGoAZQBjAHQAXwBtAG8AbgBpAHQAbwByAQAAAL8AAAEsAAAAywEAAAL7AAAAEAB0AGUAeAB0AGUAZABpAHQAAAAAAP////8AAAFrAQAAAvsAAAAYAG4AbwB0AGUAcwBfAHcAaQBkAGcAZQB0AAAAAAD/////AAAAfAEAAAL7AAAAFgB2AGUAYwB0AG8AcgBzAGMAbwBwAGUAAAAAAP////8AAAEmAQAAA/sAAAAQAHcAYQB2AGUAZgBvAHIAbQAAAAAA/////wAAAKQBAAAD+wAAABQAcgBnAGIAXwBwAGEAcgBhAGQAZQAAAAAA/////wAAAJ8BAAAD+wAAABIAaABpAHMAdABvAGcAcgBhAG0AAAAAAP////8AAAFFAQAAA/sAAAAeAG8AbgBsAGkAbgBlAHIAZQBzAG8AdQByAGMAZQBzAAAAAAD/////AAABPAEAAAP7AAAADABnAHUAaQBkAGUAcwAAAAAA/////wAAAAAAAAAAAAAHgAAAAd4AAAAEAAAABAAAAAgAAAAI/AAAAAEAAAACAAAAAgAAABYAbQBhAGkAbgBUAG8AbwBsAEIAYQByAAAAAAD/////AAAAAAAAAAAAAAAYAGUAeAB0AHIAYQBUAG8AbwBsAEIAYQByAAAAAAD/////AAAAAAAAAAA=
+ToolBarsMovable=Disabled
+
+[MainWindow][Toolbar timelineToolBar]
+ToolButtonStyle=IconOnly
+
+[Notification Messages]
+show-menubar-warning=false
+
+[OnlineResources]
+provider=Freesound
+zoom=7
+
+[Recent Dirs]
+KdenliveClipFolder[$e]=$HOME/Videos,$HOME/Documents
+KdenliveFramesFolder[$e]=$HOME/Downloads/,$HOME/Documents
+KdenliveProjectsFolder[$e]=$HOME/Videos/Edit/Projects/cyberpunk/2-KdenFiles/,$HOME/Videos/Edit/Projects/cyberpunk/2-KdenFiles,$HOME/Videos/Edit/Projects/oblivion/2-KdenFiles
+
+[Recent Files]
+File1[$e]=$HOME/Videos/Edit/Projects/cyberpunk/2-KdenFiles/cyberpunk_Pt1_1.kdenlive
+File2[$e]=$HOME/Videos/Edit/Projects/cyberpunk/2-KdenFiles/cyberpunk_Pt2_1.kdenlive
+Name1[$e]=cyberpunk_Pt1_1.kdenlive
+Name2[$e]=cyberpunk_Pt2_1.kdenlive
+
+[RenderWidget]
+showoptions=true
+
+[Scope_Histogram]
+autoRefresh=true
+bEnabled=true
+gEnabled=true
+logScale=false
+rEnabled=true
+realtime=false
+rec601=false
+sEnabled=false
+yEnabled=true
+
+[Scope_RGB Parade]
+autoRefresh=true
+axis=false
+gradref=false
+paintmode=0
+realtime=false
+
+[Scope_Vectorscope]
+75PBox=false
+autoRefresh=true
+axis=false
+backgroundmode=0
+colorspace_ypbpr=false
+gain=1
+iqlines=false
+paintmode=0
+realtime=false
+
+[Scope_Waveform]
+autoRefresh=true
+paintmode=0
+realtime=false
+rec601=false
+
+[UiSettings]
+ColorSchemePath=BreezeDark.colors
+
+[bin]
+treeviewheaders=AAAA/wAAAAAAAAABAAAAAAAAAAABAAAAAAAAAAAAAAAJ/gEAAAAIAAAACAAAAGQAAAAHAAAAMAAAAAYAAAAoAAAABQAAAFEAAAAEAAAAMAAAAAMAAAA4AAAAAgAAAGAAAAABAAAAOAAAAGAAAAAJAQEAAQAAAAAAAAAAAAAAAGT/////AAAAgQAAAAAAAAAJAAAAYAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAD6AAAAAA/
+
+[capture]
+decklink_capturedevice=4294967295
+decklink_extension=mov
+decklink_parameters=vcodec=dnxhd vb=145000k acodec=pcm_s16le threads=%threads
+defaultaudiocapture=0
+detectedv4ldevices=4294967295
+grab_extension=mov
+grab_parameters=-crf 25 -vcodec libx264 -preset veryfast -threads 0
+v4l_extension=mpg
+v4l_parameters=qscale=4 ab=192k vcodec=mpeg2video acodec=mp2 threads=%threads
+
+[env]
+capturefolder[$e]=$HOME/Videos/Edit/Kden/kdenFiles/captures
+capturetoprojectfolder=false
+currenttmpfolder[$e]=/tmp
+customprojectfolder=true
+defaultprojectfolder[$e]=$HOME/Videos/Edit/Kden/ProxyRender
+encodethreads=8
+ffmpegpath[$e]=$HOME/Videos/Edit/Kden/kdenlive/squashfs-root/usr/bin/ffmpeg
+ffplaypath[$e]=$HOME/Videos/Edit/Kden/kdenlive/squashfs-root/usr/bin/ffplay
+ffprobepath[$e]=$HOME/Videos/Edit/Kden/kdenlive/squashfs-root/usr/bin/ffprobe
+libraryfolder[$e]=$HOME/Videos/Edit/Kden/kdenFiles/library
+librarytodefaultfolder=false
+mediainfopath[$e]=/usr/bin/mediainfo
+mltpath[$e]=$HOME/Videos/Edit/Kden/kdenlive/squashfs-root/usr/share/mlt-7/profiles/
+processingthreads=7
+proxythreads=5
+rendererpath[$e]=$HOME/Videos/Edit/Kden/kdenlive/squashfs-root/usr/bin/melt
+videofolder[$e]=$HOME/Videos/Edit/VideoRendering
+videotodefaultfolder=2
+
+[misc]
+checkfirstprojectclip=false
+image_duration=00:00:00:50
+
+[project]
+audiotracks=5
+enableproxy=true
+externalProxyProfile=./;;.LRV;./;;.MP4
+parallelrender=false
+preview_profile=19
+previewextension=mkv
+previewparams=vcodec=h264_vaapi g=1 bf=0 profile=578
+proxy_profile=7
+proxyextension=mov
+proxyparams=-vf scale=%width:-2 -vcodec libx264 -g 1 -bf 0 -vb 0 -crf 20 -preset veryfast -acodec aac -ab 128k
+videotracks=5
+
+[sdl]
+blackmagic_output_device=-1
+
+[settings]
+dialogSize=1024,700
+
+[shuttle]
+shuttlebuttons=button0=monitor_pause
+
+[timeline]
+headerwidth=168
+trackheight=50
+
+[unmanaged]
+consumerslist=xgl,cbrts,avformat,rtaudio,xml,multi,null,sdl2,sdl2_audio,blipflash,qglsl
+default_profile=atsc_1080p_60
+defaultrescaleheight=540
+defaultrescalewidth=960
+favorite_effects=rboctaveshift,vignette,frei0r.pixeliz0r,frei0r.scale0tilt,frei0r.colorize,frei0r.letterb0xed,Black&WHite,Ovatta_Audio,Tran_Sbeku_2_CYBER,Tran_Sbeku_Mask_3_CYBER
+force_breeze=true
+lockedGuides=false
+monitor_audio=false
+monitoraudio=1
+previewScaling=2
+producerslist=framebuffer,ladspa.1221,ladspa.1849,ladspa.1069,ladspa.1086,ladspa.1222,ladspa.1226,ladspa.1844,ladspa.1841,ladspa.1843,ladspa.1066,ladspa.1223,avformat,avformat-novalidate,xml,xml-string,xml-nogl,abnormal,color,colour,consumer,hold,loader,melt,melt_file,noise,timewarp,tone,glaxnimate,blipflash,count,pgm,qimage,qtext,kdenlivetitle,vorbis,frei0r.ising0r,frei0r.lissajous0r,frei0r.nois0r,frei0r.onecol0r,frei0r.partik0l,frei0r.plasma,frei0r.test_pat_B,frei0r.test_pat_C,frei0r.test_pat_G,frei0r.test_pat_I,frei0r.test_pat_L,frei0r.test_pat_R
+project_fps=60
+renderProfile=Matroska-H264/AAC
+showtitlebars=false
+use_dark_breeze=true
+widgetstyle=Breeze
+
+[version]
+version=22.08.3

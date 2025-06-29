@@ -1,0 +1,21 @@
+<effect type="customVideo" tag="qtblend" id="SHORTS_SETUP_0_SUBS" version="2">
+ <name>SHORTS_SETUP_0_SUBS</name>
+ <description>Preset su durata 00:00:00:50</description>
+ <author>Jean-Baptiste Mardelle</author>
+ <parameter type="animatedrect" name="rect" value="0=0 0 1080 1920 1.000000;3=-108 -192 1296 2304 1.000000" default="0 0 %width %height 1">
+  <name>Rectangle</name>
+ </parameter>
+ <parameter type="animated" name="rotation" max="360" min="-360" notintimeline="1" value="0=0;3=0" default="0">
+  <name>Rotation</name>
+ </parameter>
+ <parameter type="list" name="compositing" paramlist="0;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;6;8" value="0" default="0">
+  <paramlistdisplay>Alpha blend,Xor,Plus,Multiply,Screen,Overlay,Darken,Lighten,Color dodge,Color burn,Hard light,Soft light,Difference,Exclusion,Bitwise or,Bitwise and,Bitwise xor,Bitwise nor,Bitwise nand,Bitwise not xor,Destination in,Destination out</paramlistdisplay>
+  <name>Compositing</name>
+ </parameter>
+ <parameter type="bool" name="distort" min="0" max="1" value="0" default="0">
+  <name>Distort</name>
+ </parameter>
+ <parameter type="bool" name="rotate_center" min="0" max="1" value="1" default="1">
+  <name>Rotate from center</name>
+ </parameter>
+</effect>

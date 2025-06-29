@@ -1,0 +1,16 @@
+<effectgroup id="Tran_Sbeku_2_CYBER" parentIn="488418">
+ <effect id="qtblend">
+  <property name="rotate_center">1</property>
+  <property name="distort">0</property>
+  <property name="compositing">0</property>
+  <property name="rotation">488418=0</property>
+  <property name="rect">488418=-6717 -3715 8640 4860 1.000000</property>
+ </effect>
+ <effect id="qtblend">
+  <property name="rotate_center">1</property>
+  <property name="distort">0</property>
+  <property name="compositing">0</property>
+  <property name="rotation">488418=0</property>
+  <property name="rect">488418=0 0 1920 1080 1</property>
+ </effect>
+</effectgroup>

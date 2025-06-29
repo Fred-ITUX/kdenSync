@@ -1,0 +1,190 @@
+<effectgroup id="Tran_Sbeku_Mask_0" parentIn="6511">
+ <effect id="qtblend">
+  <property name="rotate_center">1</property>
+  <property name="distort">0</property>
+  <property name="compositing">0</property>
+  <property name="rotation">6511=0</property>
+  <property name="rect">6511=-6218 -788 8352 4698 1.000000</property>
+ </effect>
+ <effect id="qtblend">
+  <property name="rotate_center">1</property>
+  <property name="distort">0</property>
+  <property name="compositing">0</property>
+  <property name="rotation">6511=0</property>
+  <property name="rect">6511=0 0 1920 1080 1.000000</property>
+ </effect>
+ <effect id="mask_start-rotoscoping">
+  <property name="filter">rotoscoping</property>
+  <property name="filter.feather_passes">4</property>
+  <property name="filter.feather">47</property>
+  <property name="filter.invert">0</property>
+  <property name="filter.alpha_operation">clear</property>
+  <property name="filter.mode">alpha</property>
+  <property name="filter.spline">{
+    "6511": [
+        [
+            [
+                0.35640362225097016,
+                1.0516129032258061
+            ],
+            [
+                0.23221216041397155,
+                1.0460829493087558
+            ],
+            [
+                0.24100905562742544,
+                1.0156682027649768
+            ]
+        ],
+        [
+            [
+                0.3838292367399741,
+                0.8138248847926267
+            ],
+            [
+                0.3926261319534282,
+                0.783410138248848
+            ],
+            [
+                0.3853816300129366,
+                0.686635944700461
+            ]
+        ],
+        [
+            [
+                0.35847347994825357,
+                0.4516129032258065
+            ],
+            [
+                0.351228978007762,
+                0.3548387096774194
+            ],
+            [
+                0.3760672703751617,
+                0.3133640552995391
+            ]
+        ],
+        [
+            [
+                0.42212160413971545,
+                0.07373271889400917
+            ],
+            [
+                0.44695989650711515,
+                0.03225806451612903
+            ],
+            [
+                0.4904269081500647,
+                0.028571428571428557
+            ]
+        ],
+        [
+            [
+                0.6337645536869341,
+                0.040552995391705066
+            ],
+            [
+                0.6772315653298836,
+                0.03686635944700461
+            ],
+            [
+                0.7015523932729625,
+                0.049769585253456226
+            ]
+        ],
+        [
+            [
+                0.7253557567917207,
+                0.15299539170506912
+            ],
+            [
+                0.7496765847347996,
+                0.16589861751152074
+            ],
+            [
+                0.7620957309184995,
+                0.22304147465437785
+            ]
+        ],
+        [
+            [
+                0.7915912031047866,
+                0.37142857142857133
+            ],
+            [
+                0.8040103492884865,
+                0.42857142857142855
+            ],
+            [
+                0.8003880983182406,
+                0.48018433179723485
+            ]
+        ],
+        [
+            [
+                0.7636481241914619,
+                0.6672811059907834
+            ],
+            [
+                0.7600258732212161,
+                0.7188940092165899
+            ],
+            [
+                0.7776196636481242,
+                0.752073732718894
+            ]
+        ],
+        [
+            [
+                0.8588615782664941,
+                0.823963133640553
+            ],
+            [
+                0.8764553686934023,
+                0.8571428571428571
+            ],
+            [
+                0.8800776196636482,
+                0.8801843317972354
+            ]
+        ],
+        [
+            [
+                0.8769728331177231,
+                0.9806451612903223
+            ],
+            [
+                0.8816300129366107,
+                0.9953917050691243
+            ],
+            [
+                0.8842173350582149,
+                0.9907834101382487
+            ]
+        ],
+        [
+            [
+                0.919404915912031,
+                1.0046082949308757
+            ],
+            [
+                0.9230271668822768,
+                1.0276497695852536
+            ],
+            [
+                0.7988357050452781,
+                1.0221198156682028
+            ]
+        ]
+    ]
+}
+</property>
+ </effect>
+ <effect id="qtblend">
+  <property name="rotate_center">1</property>
+  <property name="distort">0</property>
+  <property name="compositing">0</property>
+  <property name="rotation">6511=0</property>
+  <property name="rect">6511=0 0 1920 1080 1</property>
+ </effect>
+</effectgroup>

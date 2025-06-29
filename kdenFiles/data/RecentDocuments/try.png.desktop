@@ -1,0 +1,6 @@
+[Desktop Entry]
+Icon=image-png
+Name=try.png
+Type=Link
+URL[$e]=file:$HOME/Downloads/try.png
+X-KDE-LastOpenedWith=org.kde.kdenlive
