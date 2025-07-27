@@ -1,0 +1,15 @@
+\contentsline {section}{Index}{\textcolor {font}{1}}{Index}
+\contentsline {subsubsection}{\numberline {0.0.1}}{\textcolor {font}{2}}{subsubsection.0.0.1}%
+\contentsline {section}{\numberline {1}Kdenlive}{\textcolor {font}{2}}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Info \& Setup}{\textcolor {font}{2}}{subsection.1.1}%
+\contentsline {subsubsection}{\numberline {1.1.1}Profiles}{\textcolor {font}{3}}{subsubsection.1.1.1}%
+\contentsline {subsubsection}{\numberline {1.1.2}Best practice}{\textcolor {font}{4}}{subsubsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.2}Effects}{\textcolor {font}{5}}{subsection.1.2}%
+\contentsline {subsubsection}{\numberline {1.2.1}Effects rules \& Kden behavior}{\textcolor {font}{5}}{subsubsection.1.2.1}%
+\contentsline {subsubsection}{\numberline {1.2.2}Video}{\textcolor {font}{5}}{subsubsection.1.2.2}%
+\contentsline {subsubsection}{\numberline {1.2.3}Audio}{\textcolor {font}{6}}{subsubsection.1.2.3}%
+\contentsline {section}{\numberline {2}GIMP}{\textcolor {font}{7}}{section.2}%
+\contentsline {section}{\numberline {3}Audacity}{\textcolor {font}{8}}{section.3}%
+\contentsline {section}{\numberline {4}Other utilities}{\textcolor {font}{9}}{section.4}%
+\contentsline {subsection}{\numberline {4.1}App}{\textcolor {font}{9}}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Sites}{\textcolor {font}{9}}{subsection.4.2}%

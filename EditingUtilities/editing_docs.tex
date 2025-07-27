@@ -1,0 +1,346 @@
+\documentclass[12pt]{article}
+\usepackage{titling}
+\usepackage[margin=1in]{geometry}
+\usepackage{titlesec}
+\usepackage{blindtext}
+\usepackage{xcolor}
+\usepackage{makeidx}
+\usepackage{hyperref}
+\usepackage{tocloft}
+\usepackage{siunitx}
+\usepackage{listings}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric}
+\usetikzlibrary{arrows, decorations.markings}
+\usepackage{ulem}
+
+%%% per math functions 
+\sisetup{output-exponent-marker=\ensuremath{\mathrm{e}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%        CODE BOX        %%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\definecolor{identifier}{RGB}{250,250,250}
+\definecolor{keyWords}{RGB}{207, 128, 19}
+\definecolor{comments}{RGB}{37, 112, 4}
+\definecolor{strings}{RGB}{59, 86, 219}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%        DEFINE STYLES        %%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\definecolor{font}{RGB}{220,220,220}
+\definecolor{grayBG}{RGB}{75,75,75}
+\definecolor{codeBG}{RGB}{25,25,25}
+\definecolor{azure}{RGB}{24, 147, 211}
+\hypersetup{colorlinks,breaklinks, linkcolor=font}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%        NEW COMMANDS        %%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\code}[1]{\colorbox{codeBG}{\texttt{#1}}}
+%% Index title
+\newcommand{\IndexTitle}[1]{
+\begin{center}
+    {\Huge\bfseries{#1}}
+\end{center}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%        RENEW COMMANDS        %%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% rinomino il Contents del toc in Index
+\renewcommand\contentsname{\IndexTitle{Editing Utilities}}
+%% aggiungo i punti dopo gli indici
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+% aumento le dimensioni del font del toc
+\renewcommand\cftsecfont{\Large}
+% font
+\renewcommand{\familydefault}{\sfdefault}
+% pagenumber color
+\renewcommand{\thepage}{\textcolor{font}{\arabic{page}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%        INIZIO DOC        %%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\makeindex
+\begin{document}
+\pagecolor{grayBG}
+\color{font}
+\tableofcontents
+\addtocontents{toc}{\protect\contentsline{section}{Index}{\thepage}{Index}}
+\clearpage{}
+\titleformat{\section}
+{\huge\bfseries}
+{\thesection.}
+{0.3em}
+{\filcenter}[\titlerule\vspace{15px}]
+
+
+\subsubsection{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Kdenlive}
+
+\subsection{Info \& Setup}
+
+\begin{center}
+    Version:   22.08.3b-x86\_64  -- Extracted AppImage
+\end{center}
+
+
+Appimage custom paths:
+\begin{itemize}
+    \item Temporary files: /home/federico/Videos/Edit/Kden/kdenFiles/temp
+    \item Capture folder: /home/federico/Videos/Edit/Kden/kdenFiles/captures
+    \item Library: /home/federico/Videos/Edit/Kden/kdenFiles/library
+    \item Rendering, title and scripts: /home/federico/Videos/Edit/VideoRendering
+    \item Effects: /home/federico/Videos/Edit/Kden/kdenFiles/data/kdenlive/effects
+    \item Proxy: /home/federico/Videos/Edit/Kden/render
+    \item Favorites \& other profile settings: /home/federico/Videos/Edit/Kden/kdenFiles/config/kdenlive-appimagerc
+\end{itemize} 
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage{}
+\subsubsection{Profiles}
+
+Default settings:
+\begin{itemize}
+    \item Project defaults MKV: BEST Timeline Preview
+    \begin{lstlisting}
+    f=matroska
+    r=30
+    s=1920x1080
+    vcodec=libx264
+    preset=ultrafast
+    tune=fastdecode
+    intra=1
+    qscale=1
+    pix_fmt=yuv420p
+    threads=0
+    \end{lstlisting}
+
+    \item Proxy default MKV: BEST H.264 Proxy
+
+    \begin{lstlisting}
+    -vf "scale=640:-2" \
+    -c:v libx264 \
+    -preset veryfast \
+    -tune fastdecode \
+    -crf 15 \
+    -g 30 \
+    -bf 0 \
+    -pix_fmt yuv420p \
+    -threads 0 \
+    -c:a aac \
+    -b:a 128k
+    \end{lstlisting}
+
+\end{itemize}
+
+
+
+
+
+
+
+\clearpage{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection{Best practice}
+
+
+\begin{itemize}
+    \item NON USARE MAI I TITOLI -- possono buggarsi e/o far buggare il progetto
+    \item Rimanere sulla 22.04 / .08 -- le versioni dopo sono instabili
+    \item Attivare i proxy ma lasciarli manuali -- mettendoli automatici crea i proxy anche delle clip da 3 secondi, crashando ogni volta e creando tanta cache
+    \item Per provare a fixare i crash cancellare la cartella dei config 
+    \item In caso di corruzione dei proxy, si possono ricreare cancellando i file rotti (solitamente i file piccoli sono rotti/corrotti)
+    \item In caso di corruzione/bug delle preview si possono cancellare (manage cached data - current project). In questo modo riavviando il progetto, verrano ri-create da 0
+\end{itemize}
+
+
+
+CURRENTLY NOT WORKING (using custom profiles)
+To add preview render points:
+\begin{itemize}
+    \item ``I'' to add start point
+    \item ``O'' to add end point  
+    \item Keep it on `Preview using proxy clips'
+    \item Turn on `Automatic preview' (automatic update when editing)
+\end{itemize}
+
+
+
+
+
+
+
+
+
+\clearpage{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Effects}
+
+\vspace{10px}
+
+\subsubsection{Effects rules \& Kden behavior}
+\begin{center}
+    Per creare MACRO con più effetti contemporaneamente, {\color{red}NON} si possono usare effetti personalizzati per creare lo STACK.    
+\end{center}
+Funzioneranno, ma si buggeranno al prossimo riavvio di kden, che non vedrà più l'effetto e non sarà possible utilizzarlo (rimane come xml nella cartella e non causa problemi al progetto).
+
+
+
+\vspace{20px}
+
+
+
+\subsubsection{Video}
+
+Main:
+\begin{itemize}
+    \item Transfrom - zoom, opcaity, rotation
+    \item Zoompan - zoom
+    \item Chroma key Advanced - per togliere green screen
+    \item Rotoscopic Mask -  ritaglio a mano libera, modifiche frame 
+\end{itemize}
+
+\vspace{15px}
+
+Other:
+\begin{itemize}
+    \item Vignette Effect - ombra ai bordi dello schermo
+    \item Brightness - luminosità
+    \item Saturation - saturazione (per black \& white)
+    \item Elastic scale filter - stretch del frame 
+    \item Crop scale and tilt - square crop
+    \item nosync0r - transazione verticale pulita (stile cassetta)
+    \item Alpha strobing - lampeggi del frame
+    \item Color effect - filtri basici
+    \item Letterbox - barre orizzontali
+    \item Rotate keyframable - ruota frame
+    \item Vertigo - movimento di frame casuale con zoom 
+    \item Distort - effetti stile `specchi strani' (combo con Vertigo per flashback)
+    \item Pixelize - rende il frame pixellato (keyframable)
+\end{itemize}
+
+
+
+
+\vspace{20px}
+\subsubsection{Audio}
+
+
+\begin{itemize}
+    \item Band Pass - ovatta audio -- filter-width 5000.0
+    \item Audio Pan - direzionamento audio (panning)
+    \item Sox Gain  - aumento gain (stile earrape)
+    \item Rubberband octave shift - modifiche ottave (vocina / vocione)
+\end{itemize}
+
+
+
+
+\clearpage{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{GIMP}
+
+Impostare `Move layer', `Aligment' e `Crop' su ``Active Layer Only''.\\
+\\Se il layer non supporta l'empty background: Add Alpha Channel to layer.
+
+\vspace{20px}
+
+Pencil settings:
+\begin{itemize}
+    \item Smooth stroke:
+    \begin{itemize}
+        \item Quality -- 100
+        \item Weight -- 1000,0
+    \end{itemize}
+\end{itemize}
+
+
+
+\vspace{20px}
+
+Text border steps:
+\begin{itemize}
+    \item Standard:
+\begin{enumerate}
+    \item Right click on text layer
+    \item Alpha to selection
+    \item Select -- Grow
+    \item New Layer -- modify the layer
+    \item Swap order with layers (if they are mixed)
+    \item Right click on canvas -- Select -- None
+\end{enumerate}
+
+    \item Custom:
+    \begin{enumerate}
+        \item Right click on text layer -- Duplicate Layer
+        \item Modify the font color / change the brightness to 0 and/or black to max
+        \item Move the font to create a shadow
+    \end{enumerate}
+
+\end{itemize}
+
+
+
+
+
+
+\clearpage{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Audacity}
+
+Usato soprattutto per il riverbero
+
+\vspace{20px}
+
+Steps:
+\begin{enumerate}
+    \item Select the empty space after the audio clip
+    \item Generate -- Silence
+    \item Select the end of the first clip and the beginning of the other
+    \item Right click -- Join the clips
+    \item Select the audio from the clip for which you want the reverb
+    \item Effect-- Delay and reverb -- Reverb
+\end{enumerate}
+
+
+
+
+
+
+
+
+
+
+\clearpage{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Other utilities}
+
+\vspace{20px}
+
+\subsection{App}
+
+Parabolic - youtube converter \& downloader 
+
+Warpinator - File transfer
+
+
+\subsection{Sites}
+
+Remove.bg - background remover - https://www.remove.bg/upload
+
+DS Macro - souls captions (death, area\dots) - https://rezuaq.be/new-area/image-creator/
+
+noTube - youtube converter
+
+convertio - file converter - https://convertio.co/it/
+
+\end{document}
