@@ -1,0 +1,16 @@
+<effectgroup id="Tran_OBL_0" parentIn="33966">
+ <effect id="qtblend">
+  <property name="rotate_center">1</property>
+  <property name="distort">0</property>
+  <property name="compositing">0</property>
+  <property name="rotation">33966=0</property>
+  <property name="rect">33966=-5367 -485 7296 4104 1.000000</property>
+ </effect>
+ <effect id="qtblend">
+  <property name="rotate_center">1</property>
+  <property name="distort">0</property>
+  <property name="compositing">0</property>
+  <property name="rotation">33966=0</property>
+  <property name="rect">33966=0 0 1920 1080 1</property>
+ </effect>
+</effectgroup>
