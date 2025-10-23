@@ -30,6 +30,7 @@ cd "$kdenPath"/kdenlive
 cp -r $HOME/Nextcloud/Kden/Kdenlive/kdenFiles "$kdenPath"
 
 #### Extract the appimage
+sudo chmod +x "$file"
 "$file" --appimage-extract
 
 #### Make the apprun executable

@@ -18,8 +18,10 @@ subN    = "1"
 
 OUTPUT_DIR = "/home/federico/Downloads"  
 # OUTPUT_DIR = f"/home/federico/Videos/Edit/Projects/{project}/7-Parts/{part}/1-{project}_ROBBBA/sub{subN}"
+
 #### Change setup for shorts
 SHORTS = "n".lower().strip() #### "y" / "n"
+
 
 
 

@@ -28,10 +28,10 @@ def process_file(folder_path, file_name, delete_original):
     old_path = os.path.join(folder_path, file_name)
 
     # Determine the conversion based on file extension
-    if extension.lower() == ".mp4":
-        new_name = name + ".mkv"
+    if extension.lower() == ".m4v":
+        new_name = name + ".mp4"
         new_path = os.path.join(folder_path, new_name)
-        if convert_file(old_path, new_path, "mkv") and delete_original == "Yes":
+        if convert_file(old_path, new_path, "mp4") and delete_original == "Yes":
             delete_file(old_path)
 
 
@@ -80,7 +80,7 @@ if folder_path == '':
 
 if __name__ == "__main__":
 
-    recursive = "No"            # "Yes" / "No"
+    recursive = "Yes"            # "Yes" / "No"
     delete_original = "Yes"     # "Yes" / "No"
 
     # Check if the folder exists

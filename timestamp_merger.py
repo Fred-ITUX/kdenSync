@@ -67,7 +67,7 @@ if __name__ == "__main__":
 
 
     #### Total video lengths (Ex.: "27:09", "24:18" )
-    video_lengths = [ ]
+    video_lengths = [  ]
     
 
 
@@ -77,19 +77,14 @@ if __name__ == "__main__":
     #### Timestamps for each video (Ex.: ("00:00","Timesamp name"), ....   )
     raw = [ 
 
-
-        [ ],
-
-
-        []
-
+            []
 
     ]
     
     
     
-    #### time removed by the total of each video (from the removed intro)
-    reduction = 7
+    #### time removed by the total of each video (~7s from the removed intro)
+    reduction = 15
 
     result = merge_timestamps(video_lengths, raw, reduction)
     for ts, label in result:

@@ -10,6 +10,11 @@ template="ProjectTemplate"
 
 read -p "Project name: " projectName
 
+if [ "$projectName" == "" ]; then
+   echo -e "No name give, exiting..."
+   exit 1
+fi
+
 robba="1-"$projectName"_ROBBBA"
 kden="2-KdenFiles"
 video="3-Video"

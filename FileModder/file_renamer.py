@@ -40,7 +40,7 @@ def process_file(folder_path, file_name, strings_to_remove):
     name = name.strip()
 
     # Ensure no trailing spaces before the extension
-    new_name_with_extension = name.rstrip() + extension.strip()
+    new_name_with_extension = name.title().rstrip() + extension.strip()
 
     # If the name changed, rename the file
     if new_name_with_extension != original_name:
@@ -55,25 +55,31 @@ def process_file(folder_path, file_name, strings_to_remove):
 ####################################################################
 
 
+defaultFolder   = "/home/federico/Downloads"
+folder_path     = input(f"Default folder {defaultFolder}:\n").strip()
+
+if folder_path == '':
+    folder_path = "/home/federico/Downloads"
+
+
+
 if __name__ == "__main__":
 
-
-    folder_path = "/home/federico/Downloads" 
+    # folder_path = ""
 
     # folder_path = "/home/federico/Downloads/Playlist"
     # folder_path = "/home/federico/Downloads/YTDownloads" 
     
 
     strings_to_remove = [ '＂' , '"' , "[" , "]" , "#" , "," , ":","：","”" , '”', "“",
-
-    "live", "w⧸sabaku maratona" , "Review Blind Run" , "w⧸Sabaku"  
+                        "live", "w⧸sabaku maratona" , "Review Blind Run" , "w⧸Sabaku"  
                     
                         ] 
 
-
+    # strings_to_remove = [ ]
 
     # Set recursive option
-    recursive = "Yes"  # "Yes" / "No"
+    recursive = "No"  # "Yes" / "No"
 
     # Check if the folder exists
     if os.path.isdir(folder_path):

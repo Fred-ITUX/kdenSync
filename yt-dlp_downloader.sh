@@ -1,20 +1,5 @@
 #!/bin/bash
 
-####        21/04/2025 - Currently installed via:
-# pipx install "yt-dlp[default]" --force  #### replaced old version
-# Installing to existing venv 'yt-dlp'
-#   installed package yt-dlp 2025.3.31, installed using Python 3.12.3
-#   These apps are now globally available
-#     - yt-dlp
-#   These manual pages are now globally available
-#     - man1/yt-dlp.1
-# done! ✨ 🌟 ✨
-
-# yt-dlp -U
-# Latest version: stable@2025.03.31 from yt-dlp/yt-dlp
-# yt-dlp is up to date (stable@2025.03.31 from yt-dlp/yt-dlp)
-
-
 
 #### SysInfo & path 
 if [ -f ~/.bash_UT ]; then
@@ -31,8 +16,8 @@ outputPath="$HOME/Downloads"
 #### Fixed path for playlists
 PlaylistOutputPath="$HOME/Downloads/Playlist"
 
-#### Cookie folder
-cookieFolder="$HOME/.mozilla/firefox/b8f1bxie.default-release"
+#### Cookie folder --- thealldedfred
+cookieFolder="$HOME/.mozilla/firefox/45ym995r.default-release"
 
 #### Update log
 YT_DLP_updateLogPath="$HOME/Nextcloud/Kden/scripts/YT_DLP_update_log.txt"
