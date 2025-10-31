@@ -12,12 +12,6 @@ export XDG_CACHE_HOME="$kdenlivePath/kdenFiles/cache"
 export XDG_DATA_HOME="$kdenlivePath/kdenFiles/data"
 
 
-#### Fix ALSA / AppImage runtime paths
-export LD_LIBRARY_PATH=""
-export LD_PRELOAD="/usr/lib/x86_64-linux-gnu/libasound.so.2"
-
-
-
 #### MLT data for metadata manifests, mlt & melt engine
 export MLT_DATA="$SQUASHFS_ROOT/usr/share/mlt-7"
 export MLT_PATH="$SQUASHFS_ROOT/usr/lib/mlt-7"
@@ -45,3 +39,26 @@ export XDG_RUNTIME_DIR="/run/user/$(id -u)"
 
 #### Launch Kdenlive (with GameMode)
 gamemoderun "$SQUASHFS_ROOT/AppRun" "$@"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
