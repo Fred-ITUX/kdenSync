@@ -62,7 +62,6 @@ if folder_path == '':
     folder_path = "/home/federico/Downloads"
 
 
-
 if __name__ == "__main__":
 
     # folder_path = ""
@@ -72,7 +71,7 @@ if __name__ == "__main__":
     
 
     strings_to_remove = [ '＂' , '"' , "[" , "]" , "#" , "," , ":","：","”" , '”', "“",
-                        "live", "w⧸sabaku maratona" , "Review Blind Run" , "w⧸Sabaku"  
+                        "live", "w⧸sabaku maratona" , "Review" , "Blind Run" , "w⧸Sabaku"  
                     
                         ] 
 
