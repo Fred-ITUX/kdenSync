@@ -19,6 +19,7 @@ YT_DLP_updateLogPath="$HOME/Nextcloud/Kden/scripts/YT_DLP_update_log.txt"
 
 urls="$HOME/Nextcloud/Kden/scripts/urls.txt"
 
+
 #########################################################################
 
 
@@ -44,6 +45,8 @@ if [ "$alreadyUpdated" == "" ]; then
     echo -e "\nUpdate check done\n"
 fi
 
+
+gedit "$urls" &
 
 
 log_file_empty=$(cat "$urls")
@@ -104,6 +107,7 @@ EOF
 
 outputPath="$PlaylistOutputPath"
 
+
 else
 config=$(mktemp)
 cat <<EOF > "$config"
@@ -114,6 +118,7 @@ EOF
 fi
 
 
+mkdir -p "$outputPath"
 
 
 #########################################################################
@@ -139,7 +144,7 @@ while IFS= read -r line; do
         if [ "$userChoice" == "mp4" ] || [ "$userChoice" == "mkv" ]; then
             yt-dlp --config-location "$config" \
                 -f "bestvideo[height<=1080][fps<=60]+bestaudio/best" \
-                --merge-output-format "$videoFormat" \
+                --merge-output-format "$userChoice" \
                 "$url"
 
             onComplete
@@ -148,7 +153,7 @@ while IFS= read -r line; do
             yt-dlp --config-location "$config" \
                 -f bestaudio \
                 --extract-audio \
-                --audio-format "$audioFormat" \
+                --audio-format "$userChoice" \
                 --audio-quality 256k \
                 "$url"
             

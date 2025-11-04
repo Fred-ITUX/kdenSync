@@ -8,7 +8,10 @@ template="ProjectTemplate"
 
 # echo -e "Using template: $template"
 
-read -p "Project name: " projectName
+read -p "Project name: " projectName 
+
+projectName=$(echo -e "$projectName" | tr ' ' _)
+
 
 if [ "$projectName" == "" ]; then
    echo -e "No name give, exiting..."
