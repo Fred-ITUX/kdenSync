@@ -19,6 +19,7 @@ YT_DLP_updateLogPath="$HOME/Nextcloud/Kden/scripts/YT_DLP_update_log.txt"
 
 urls="$HOME/Nextcloud/Kden/scripts/urls.txt"
 
+gedit "$urls" &
 
 #########################################################################
 
@@ -44,9 +45,6 @@ if [ "$alreadyUpdated" == "" ]; then
     } >> "$YT_DLP_updateLogPath"
     echo -e "\nUpdate check done\n"
 fi
-
-
-gedit "$urls" &
 
 
 log_file_empty=$(cat "$urls")
