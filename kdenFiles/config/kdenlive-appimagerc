@@ -74,13 +74,13 @@ zoom=7
 [Recent Dirs]
 KdenliveClipFolder[$e]=$HOME/Videos,$HOME/Documents
 KdenliveFramesFolder[$e]=$HOME/Downloads/,$HOME/Documents
-KdenliveProjectsFolder[$e]=$HOME/Videos/Edit/Projects/cyberpunk/2-KdenFiles,$HOME/Videos/Edit/Projects/cyberpunk/2-KdenFiles/,$HOME/Videos/Edit/Projects/oblivion/2-KdenFiles
+KdenliveProjectsFolder[$e]=$HOME/Videos/Edit/Projects/cyberpunk_dlc_NEW/2-KdenFiles,$HOME/Videos/Edit/Projects/cyberpunk_dlc_NEW/2-KdenFiles/,$HOME/Nextcloud/Kden/Other/Templates/
 
 [Recent Files]
-File1[$e]=$HOME/Videos/Edit/Projects/cyberpunk/2-KdenFiles/cyberpunk_Pt1_1.kdenlive
-File2[$e]=$HOME/Videos/Edit/Projects/cyberpunk/2-KdenFiles/cyberpunk_Pt2_1.kdenlive
-Name1[$e]=cyberpunk_Pt1_1.kdenlive
-Name2[$e]=cyberpunk_Pt2_1.kdenlive
+File1[$e]=$HOME/Nextcloud/Kden/Other/Templates/ProjectTemplate.kdenlive
+File2[$e]=$HOME/Videos/Edit/Projects/cyberpunk_dlc_NEW/2-KdenFiles/cyberpunk_dlc_NEW_1.kdenlive
+Name1[$e]=ProjectTemplate.kdenlive
+Name2[$e]=cyberpunk_dlc_NEW_1.kdenlive
 
 [RenderWidget]
 showoptions=true
@@ -124,7 +124,7 @@ rec601=false
 ColorSchemePath=BreezeDark.colors
 
 [bin]
-treeviewheaders=AAAA/wAAAAAAAAABAAAAAAAAAAABAAAAAAAAAAAAAAAJ/gEAAAAIAAAACAAAAGQAAAAHAAAAMAAAAAYAAAAoAAAABQAAAFEAAAAEAAAAMAAAAAMAAAA4AAAAAgAAAGAAAAABAAAAOAAAATQAAAAJAQEAAQAAAAAAAAAAAAAAAGT/////AAAAgQAAAAAAAAAJAAABNAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAD6AAAAAA/
+treeviewheaders=AAAA/wAAAAAAAAABAAAAAAAAAAABAAAAAAAAAAAAAAAJ/gEAAAAIAAAACAAAAGQAAAAHAAAAMAAAAAYAAAAoAAAABQAAAFEAAAAEAAAAMAAAAAMAAAA4AAAAAgAAAGAAAAABAAAAOAAAAhYAAAAJAQEAAQAAAAAAAAAAAAAAAGT/////AAAAgQAAAAAAAAAJAAACFgAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAD6AAAAAA/
 
 [capture]
 decklink_capturedevice=4294967295
