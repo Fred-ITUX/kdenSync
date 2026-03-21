@@ -39,26 +39,3 @@ export XDG_RUNTIME_DIR="/run/user/$(id -u)"
 
 #### Launch Kdenlive (with GameMode)
 gamemoderun "$SQUASHFS_ROOT/AppRun" "$@"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

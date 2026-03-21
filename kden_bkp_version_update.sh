@@ -1,14 +1,9 @@
 #!/bin/bash
-
-
-#### SysInfo & path 
-if [ -f ~/.bash_UT ]; then
-    . ~/.bash_UT
-fi
+if [ -f ~/.bash_UT ]; then . ~/.bash_UT; fi               
 
 
 ##############################################################################
-#### general path
+
 path="$HOME/Videos/Edit/Projects"
 
 #### get the folder from fzf interactive selection

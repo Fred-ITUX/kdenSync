@@ -6,8 +6,8 @@ dest_path="$HOME/Downloads/"$fileExt"_dummy"
 
 mkdir -p "$dest_path"
 
-if [ "$source_path" == "" ]; then
-    echo -e "Path error"
+if [ -z "$source_path" ]; then
+    echo -e "Path error: $source_path"
 else 
     #### Find all .mkv files in the directory and create dummy to keep filenames
     find "$source_path" -maxdepth 1 -type f -name "*.$fileExt" -print0 | while IFS= read -r -d '' file; do

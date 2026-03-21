@@ -1,10 +1,5 @@
 #!/bin/bash
-
-
-#### SysInfo & path 
-if [ -f ~/.bash_UT ]; then
-    . ~/.bash_UT
-fi
+if [ -f ~/.bash_UT ]; then . ~/.bash_UT; fi               
 
 
 #### path to send BKP

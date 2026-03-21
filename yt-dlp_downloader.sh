@@ -28,9 +28,9 @@ gedit "$urls" &
 
 #########################################################################
 
-alreadyUpdated=$(cat $HOME/Nextcloud/Kden/scripts/YT_DLP_update_log.txt | grep "$(get_date_comparison)")
+alreadyUpdated=$( grep "$(get_date_comparison)" "$HOME/Nextcloud/Kden/scripts/YT_DLP_update_log.txt" )
 
-if [ "$alreadyUpdated" == "" ]; then
+if [ -z "$alreadyUpdated" ]; then
 
     echo -e "\nChecking for updates...\n"
    {   
@@ -50,7 +50,7 @@ fi
 log_file_empty=$(cat "$urls")
 log_file_used=$(cat "$urls" | grep "✅️")
 
-if [ "$log_file_empty" == "" ] || [ "$log_file_used" != "" ]  ; then
+if [ -z "$log_file_empty" ] || [ "$log_file_used" != "" ]  ; then
    echo -e "❌️ File $urls empty or used, exiting\n...\n$(less $urls)"
    exit 1
 fi
@@ -170,7 +170,5 @@ statusCheck+="\n\n    ✅️ Done: $(get_formatted_date)\n"
 echo -e "$statusCheck" >> "$urls"
 
 #### Extras
-echo -e "$outputPath" | python3 $HOME/Nextcloud/Python/scripts/FileModder/file_renamer.py
-echo -e "$outputPath" | python3 $HOME/Nextcloud/Python/scripts/FileModder/mkv_converter.py
-
-
+echo -e "$outputPath" | python3 "$HOME/Nextcloud/Python/scripts/FileModder/file_renamer.py"
+echo -e "$outputPath" | python3 "$HOME/Nextcloud/Python/scripts/FileModder/mkv_converter.py"

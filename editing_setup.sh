@@ -10,17 +10,9 @@ if [ -d "$kdenPath" ]; then
    exit 1
 fi
 
-#### Top folders inside /Videos
-mkdir "$VideosPath/Edit" "$VideosPath/OBS"
 
-#### Kden dependencies
-mkdir "$VideosPath/Edit/Kden" "$VideosPath/Edit/Kden/ProxyRender"
+mkdir -p "$VideosPath/OBS" "$VideosPath/Edit/VideoRendering" "$VideosPath/Edit/Projects" "$VideosPath/Edit/Kden" "$VideosPath/Edit/Kden/ProxyRender"
 
-mkdir "$VideosPath/Edit/Projects" "$VideosPath/Edit/VideoRendering"
-
-
-
-################################################################################################
 
 #### Appimage extraction
 
@@ -31,17 +23,14 @@ if [ ! -f "$file" ]; then
    exit 1
 fi
 
-mkdir "$kdenPath"/kdenlive
+mkdir -p "$kdenPath"/kdenlive
 cd "$kdenPath"/kdenlive
 
 #### Copy the files folder with the GUI and kden settings
-cp -r $HOME/Nextcloud/Kden/Kdenlive/kdenFiles "$kdenPath"
+cp -r "$HOME/Nextcloud/Kden/Kdenlive/kdenFiles" "$kdenPath"
 
 #### Extract the appimage
 sudo chmod +x "$file"
 "$file" --appimage-extract
 
-#### Make the apprun executable
 sudo chmod +x "$kdenPath"/kdenlive/squashfs-root/AppRun
-
-

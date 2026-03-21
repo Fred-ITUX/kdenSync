@@ -13,7 +13,7 @@ read -p "Project name: " projectName
 projectName=$(echo -e "$projectName" | tr ' ' _)
 
 
-if [ "$projectName" == "" ]; then
+if [ -z "$projectName" ]; then
    echo -e "No name give, exiting..."
    exit 1
 fi
@@ -32,25 +32,24 @@ txtFile="$projectName.txt"
 
 path="$projectFolder/$projectName"
 
-mkdir $path
+mkdir -p "$path"
 
-mkdir $path/$robba
-mkdir $path/$kden
-mkdir $path/$video
-mkdir $path/$thumb
-mkdir $path/$stream
-mkdir $path/$proxy
-mkdir $path/$parts
-mkdir $path/$parts/Pt1
-mkdir $path/$extra
-mkdir $path/$effects
+mkdir "$path/$robba"
+mkdir "$path/$kden"
+mkdir "$path/$video"
+mkdir "$path/$thumb"
+mkdir "$path/$stream"
+mkdir "$path/$proxy"
+mkdir "$path/$parts"
+mkdir "$path/$parts/Pt1"
+mkdir "$path/$extra"
+mkdir "$path/$effects"
 
 #### Create txt file from UT template
-touch $path/$txtFile
+touch "$path/$txtFile"
 
-cat $HOME/Nextcloud/Kden/Other/Docs/DescriptionUT.txt > $path/$txtFile 
+cat "$HOME/Nextcloud/Kden/Other/Docs/DescriptionUT.txt" > "$path/$txtFile" 
 
 
 #### Copy template
-cp $HOME/Nextcloud/Kden/Other/Templates/"$template".kdenlive $path/$kden/"$projectName"_1.kdenlive
-
+cp "$HOME/Nextcloud/Kden/Other/Templates/"$template".kdenlive" "$path/$kden/"$projectName"_1.kdenlive"
