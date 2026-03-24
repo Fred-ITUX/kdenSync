@@ -28,7 +28,7 @@ gedit "$urls" &
 
 #########################################################################
 
-alreadyUpdated=$( grep "$(get_date_comparison)" "$HOME/Nextcloud/Kden/scripts/YT_DLP_update_log.txt" )
+alreadyUpdated=$( grep -F "$(get_date_comparison)" "$HOME/Nextcloud/Kden/scripts/YT_DLP_update_log.txt" )
 
 if [ -z "$alreadyUpdated" ]; then
 
