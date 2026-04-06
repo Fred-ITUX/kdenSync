@@ -1,23 +1,16 @@
 #!/bin/bash
-if [ -f ~/.bash_UT ]; then . ~/.bash_UT; fi               
-
-
-##############################################################################
+if [ -f "$HOME/.bash_aliases"   ]; then . "$HOME/.bash_aliases"  ; else echo -e "[CRITICAL ERROR] Bash module not found: $HOME/.bash_aliases"  ; exit 1; fi
+if [ -f "$HOME/.bash_functions" ]; then . "$HOME/.bash_functions"; else echo -e "[CRITICAL ERROR] Bash module not found: $HOME/.bash_functions"; exit 1; fi
+if [ -f "$HOME/.bash_UT"        ]; then . "$HOME/.bash_UT"       ; else echo -e "[CRITICAL ERROR] Bash module not found: $HOME/.bash_UT"       ; exit 1; fi          
 
 path="$HOME/Videos/Edit/Projects"
 
-#### get the folder from fzf interactive selection
 userChoice=$(ls "$path" | fzf --height=20% --border --prompt="Project > ")
 
-#### Get the complete list of items in the project folder
 fileList=$(ls "$path/$userChoice")
 
 
-#### if no project selected
-if [ -z "$userChoice" ]; then
-    echo "No project selected. Exiting."
-    exit 1
-fi
+if [ -z "$userChoice" ]; then sysLogger e "No project selected. Exiting."; exit 1; fi
 
 
 kdenFolder="$userChoice/"$( echo -e "$fileList" | grep -i "kdenfiles" )
@@ -27,54 +20,31 @@ kdenFilesPath="$path/$kdenFolder"
 echo -e "Kden Files Path: $kdenFilesPath\n"
 
 cd "$kdenFilesPath"
-##############################################################################
 
-
-
-
-
-
-##############################################################################
 echo -e "Choose the version to backup:"
 
-#### Get the file from fzf interactive selection
 firstFile=$(ls "$kdenFilesPath" | fzf --height=20% --border --prompt="File > ")
 
-#### if no file selected
-if [ -z "$firstFile" ]; then
-    echo "No file selected. Exiting."
-    exit 1
-fi
 
-#### extension to check
+if [ -z "$firstFile" ]; then sysLogger e "No file selected. Exiting."; exit 1 ; fi
+
+
 ext=".kdenlive"
 
 #### If matches, remove the .kdenlive
-if [[ $firstFile == *"$ext" ]]; then
-  base="${firstFile%"$ext"}"
-else
-  echo "❌ Filename doesn't end in $ext" >&2
-  exit 1
-fi
+if [[ $firstFile == *"$ext" ]]; then base="${firstFile%"$ext"}"
+else sysLogger e "Filename doesn't end in $ext"; exit 1; fi
 
 #### Pull off the trailing underscore + digits
 if [[ $base =~ ^(.+)_([0-9]+)$ ]]; then
 
-  prefix="${BASH_REMATCH[1]}"
-  num="${BASH_REMATCH[2]}"
+prefix="${BASH_REMATCH[1]}"
+num="${BASH_REMATCH[2]}"
 
-else
-  echo "❌ No trailing _number found in $base" >&2
-  exit 1
-fi
-##############################################################################
+else sysLogger e "No trailing _number found in $base"; exit 1; fi
 
 
 
-
-
-
-##############################################################################
 #### Increment the version number ( ..._X.kdenlive )
 secondNum=$(( num + 1 ))
 thirdNum=$(( secondNum + 1 ))
@@ -83,44 +53,46 @@ thirdNum=$(( secondNum + 1 ))
 secondFile="${prefix}_${secondNum}${ext}"
 thirdFile="${prefix}_${thirdNum}${ext}"
 
+
+#### Files exists, proceed with update and backup
 if [ -f "$secondFile" ] && [ -f "$thirdFile" ]; then
 
-  #### Files exists, proceed with update and backup
-  bkpNewFolder="$kdenFilesPath"/bkp_"$(get_file_date)"
-  mkdir "$bkpNewFolder"
+    bkpNewFolder="$kdenFilesPath"/bkp_"$(get_file_date)"
+    mkdir "$bkpNewFolder"
 
-  echo -e "\nCreating: $bkpNewFolder\n"
+    sysLogger i "\nCreating: $bkpNewFolder\n"
 
-  echo -e "Copying into the $bkpNewFolder: 
-  "$kdenFilesPath"/"$firstFile"  
-  "$kdenFilesPath"/"$secondFile" 
-  "$kdenFilesPath"/"$thirdFile"    
-  \n\n"
+    sysLogger i "Copying into the $bkpNewFolder: 
+    "$kdenFilesPath"/"$firstFile"  
+    "$kdenFilesPath"/"$secondFile" 
+    "$kdenFilesPath"/"$thirdFile"    
+    \n\n"
 
-  cp "$kdenFilesPath"/"$firstFile"    "$bkpNewFolder"
-  cp "$kdenFilesPath"/"$secondFile"   "$bkpNewFolder"
-  cp "$kdenFilesPath"/"$thirdFile"    "$bkpNewFolder"
+    cp "$kdenFilesPath"/"$firstFile"    "$bkpNewFolder"
+    cp "$kdenFilesPath"/"$secondFile"   "$bkpNewFolder"
+    cp "$kdenFilesPath"/"$thirdFile"    "$bkpNewFolder"
 
-  echo -e "Updating versions:
-  "$kdenFilesPath"/"$firstFile"   "$kdenFilesPath"/"$secondFile"
-  "$kdenFilesPath"/"$firstFile"   "$kdenFilesPath"/"$thirdFile"
-  \n\n"
+    sysLogger i "Updating versions:
+    "$kdenFilesPath"/"$firstFile"   "$kdenFilesPath"/"$secondFile"
+    "$kdenFilesPath"/"$firstFile"   "$kdenFilesPath"/"$thirdFile"
+    \n\n"
 
-  cp "$kdenFilesPath"/"$firstFile"  "$kdenFilesPath"/"$secondFile"
-  cp "$kdenFilesPath"/"$firstFile"  "$kdenFilesPath"/"$thirdFile"
+    cp "$kdenFilesPath"/"$firstFile"  "$kdenFilesPath"/"$secondFile"
+    cp "$kdenFilesPath"/"$firstFile"  "$kdenFilesPath"/"$thirdFile"
 
-##############################################################################
-else
-  #### If files doesn't exists, create them by copying from the origin
-  echo -e "\nFiles do not exists, copying...\n"
-  cp "$kdenFilesPath"/"$firstFile" "$kdenFilesPath"/"$secondFile"
-  cp "$kdenFilesPath"/"$firstFile" "$kdenFilesPath"/"$thirdFile"
 
-  echo -e "Files created: 
-  "$kdenFilesPath"/"$secondFile"
-  "$kdenFilesPath"/"$thirdFile""   
+#### If files doesn't exists, create them by copying from the origin
+else 
+    
+    sysLogger w "\nFiles did not exist, copying...\n"
+    cp "$kdenFilesPath"/"$firstFile" "$kdenFilesPath"/"$secondFile"
+    cp "$kdenFilesPath"/"$firstFile" "$kdenFilesPath"/"$thirdFile"
+
+    sysLogger i "Files created: 
+        "$kdenFilesPath"/"$secondFile"
+        "$kdenFilesPath"/"$thirdFile""   
 fi
 
 
-
+  
 

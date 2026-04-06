@@ -15,5 +15,5 @@ else
         dummy="$dest_path/$filename"
         touch "$dummy"
     done
-    echo "Created dummys into: $dest_path"
+    echo -e "Created dummys into: $dest_path"
 fi

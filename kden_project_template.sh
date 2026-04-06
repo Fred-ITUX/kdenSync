@@ -1,22 +1,15 @@
 #!/bin/bash
 
-
 projectFolder="$HOME/Videos/Edit/Projects"
 
-#### kden template
 template="ProjectTemplate"
-
-# echo -e "Using template: $template"
 
 read -p "Project name: " projectName 
 
 projectName=$(echo -e "$projectName" | tr ' ' _)
 
 
-if [ -z "$projectName" ]; then
-   echo -e "No name give, exiting..."
-   exit 1
-fi
+if [ -z "$projectName" ]; then echo -e "No name give, exiting"; exit 1; fi
 
 robba="1-"$projectName"_ROBBBA"
 kden="2-KdenFiles"
@@ -40,16 +33,11 @@ mkdir "$path/$video"
 mkdir "$path/$thumb"
 mkdir "$path/$stream"
 mkdir "$path/$proxy"
-mkdir "$path/$parts"
-mkdir "$path/$parts/Pt1"
+mkdir -p "$path/$parts/Pt1"
 mkdir "$path/$extra"
 mkdir "$path/$effects"
 
-#### Create txt file from UT template
-touch "$path/$txtFile"
 
 cat "$HOME/Nextcloud/Kden/Other/Docs/DescriptionUT.txt" > "$path/$txtFile" 
 
-
-#### Copy template
 cp "$HOME/Nextcloud/Kden/Other/Templates/"$template".kdenlive" "$path/$kden/"$projectName"_1.kdenlive"

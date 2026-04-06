@@ -1,13 +1,5 @@
 #!/bin/bash
-
-
-#### SysInfo & path 
-if [ -f ~/.bash_UT ]; then
-    . ~/.bash_UT
-fi
-
-
-#########################################################################
+if [ -f "$HOME/.bash_UT"        ]; then . "$HOME/.bash_UT"       ; else echo -e "[CRITICAL ERROR] Bash module not found: $HOME/.bash_UT"       ; exit 1; fi
 
 outputPath="$HOME/Downloads/YtVideos"
 
@@ -20,7 +12,6 @@ YT_DLP_updateLogPath="$HOME/Nextcloud/Kden/scripts/YT_DLP_update_log.txt"
 urls="$HOME/Nextcloud/Kden/scripts/urls.txt"
 
 gedit "$urls" &
-
 #########################################################################
 
 
