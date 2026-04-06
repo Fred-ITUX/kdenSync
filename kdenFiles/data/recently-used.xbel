@@ -429,4 +429,30 @@
       </metadata>
     </info>
   </bookmark>
+  <bookmark href="file:///home/federico/Downloads/roundabout_1.png" added="2026-04-05T14:38:01.442000Z" modified="2026-04-05T14:38:01.442000Z" visited="2026-04-05T14:38:01.442000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="org.kde.kdenlive" exec="kdenlive %F %u" modified="2026-04-05T14:38:01.442000Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/federico/Downloads/roundabout_1-2.png" added="2026-04-05T14:40:26.924000Z" modified="2026-04-05T14:40:26.924000Z" visited="2026-04-05T14:40:26.924000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="org.kde.kdenlive" exec="kdenlive %F %u" modified="2026-04-05T14:40:26.924000Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
 </xbel>
