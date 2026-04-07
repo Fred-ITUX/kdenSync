@@ -8,9 +8,8 @@ IMAGE_HEIGHT    = 1080
 
 
 #### Video
-FONT_PATH       = "/home/federico/.fonts/Droid-sans/DroidSans-Bold.ttf"    
-
-
+# FONT_PATH       = "/home/federico/.fonts/Droid-sans/DroidSans-Bold.ttf"    
+FONT_PATH       = "/home/federico/.fonts/Kanit/Kanit-Bold.ttf"
 
 project = "oblivion"
 part    = "Pt7"
