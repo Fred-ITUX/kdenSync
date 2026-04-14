@@ -1,12 +1,57 @@
-https://www.youtube.com/playlist?list=PLKS7SOH9fvAm6y9GWxQaS-nq-YHTA9OUl
-
-    Starting: Tue Nov 04 2025 08:21:27
-
-Downloading: https://www.youtube.com/playlist?list=PLKS7SOH9fvAm6y9GWxQaS-nq-YHTA9OUl
-  Started: Tue Nov 04 2025 08:21:59
-  Completed: Tue Nov 04 2025 09:27:28
-Filename: 12 - ＂Tling＂ - Demon's Souls Remake [PS5] w⧸ Sabaku, ＂Completionist Run＂ #FIN.mkv
 
 
-    ✅️ Done: Tue Nov 04 2025 09:27:28
+
+    Starting: Tue Apr 14 2026 08:15:42
+
+Downloading: https://www.youtube.com/watch?v=k1PV5squdbY&t=47s
+  Started: Tue Apr 14 2026 08:15:44
+  Completed: Tue Apr 14 2026 08:15:44
+Filename: Playlist
+
+
+    ✅️ Done: Tue Apr 14 2026 08:15:44
+
+
+    Starting: Tue Apr 14 2026 08:17:28
+
+Downloading: https://www.youtube.com/watch?v=k1PV5squdbY&t=47s
+  Started: Tue Apr 14 2026 08:17:30
+  Completed: Tue Apr 14 2026 08:17:30
+Filename: Playlist
+
+
+    ✅️ Done: Tue Apr 14 2026 08:17:30
+
+
+    Starting: Tue Apr 14 2026 08:18:06
+
+Downloading: https://www.youtube.com/watch?v=k1PV5squdbY&t=47s
+  Started: Tue Apr 14 2026 08:18:06
+  Completed: Tue Apr 14 2026 08:18:23
+Filename: Playlist
+
+
+    ✅️ Done: Tue Apr 14 2026 08:18:23
+
+
+    Starting: Tue Apr 14 2026 08:21:42
+
+Downloading: https://www.youtube.com/watch?v=k1PV5squdbY&t=47s
+  Started: Tue Apr 14 2026 08:21:42
+  Completed: Tue Apr 14 2026 08:21:45
+Filename: Playlist
+
+
+    ✅️ Done: Tue Apr 14 2026 08:21:45
+
+
+    Starting: Tue Apr 14 2026 08:22:25
+
+Downloading: https://www.youtube.com/watch?v=k1PV5squdbY&t=47s
+  Started: Tue Apr 14 2026 08:22:25
+  Completed: Tue Apr 14 2026 08:22:27
+Filename: Playlist
+
+
+    ✅️ Done: Tue Apr 14 2026 08:22:27
 

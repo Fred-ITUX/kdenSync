@@ -11,7 +11,7 @@ YT_DLP_updateLogPath="$HOME/Nextcloud/Kden/scripts/YT_DLP_update_log.txt"
 
 urls="$HOME/Nextcloud/Kden/scripts/urls.txt"
 
-# gedit "$urls" &
+gedit "$urls" &
 #########################################################################
 
 
@@ -41,10 +41,10 @@ fi
 log_file_empty=$(cat "$urls")
 log_file_used=$(cat "$urls" | grep "✅️")
 
-# if [ -z "$log_file_empty" ] || [ "$log_file_used" != "" ]  ; then
-#    echo -e "❌️ File $urls empty or used, exiting\n...\n$(less $urls)"
-#    exit 1
-# fi
+if [ -z "$log_file_empty" ] || [ "$log_file_used" != "" ]  ; then
+   echo -e "❌️ File $urls empty or used, exiting\n...\n$(less $urls)"
+   exit 1
+fi
 
 
 grabFileName(){
@@ -70,7 +70,7 @@ onComplete(){
 
 
 
-formats=(mp3 mp4) #### mkv -- case sensitive -- wav does not support quality control, always downloads BIG files (~20MB per min)
+formats=(mkv mp3 mp4) #### case sensitive -- wav does not support quality control, always downloads BIG files (~20MB per min)
 
 userChoice=$(printf "%s\n" "${formats[@]}" | fzf --height=1% --border --prompt="Format > ")
 
@@ -89,8 +89,6 @@ if [ "$playlist" == "Yes" ]; then
 config=$(mktemp)
 cat <<EOF > "$config"
 --cookies-from-browser firefox:"$cookieFolder"
---js-runtime node
---extractor-args "youtube:player_client=android"
 --paths "$PlaylistOutputPath"    
 -o "%(title)s.%(ext)s"
 -o "%(playlist_index)s - %(title)s.%(ext)s"
@@ -103,8 +101,6 @@ else
 config=$(mktemp)
 cat <<EOF > "$config"
 --cookies-from-browser firefox:"$cookieFolder"
---js-runtime node
---extractor-args "youtube:player_client=android"
 --paths "$outputPath"    
 -o "%(title)s.%(ext)s"
 EOF
@@ -118,48 +114,48 @@ mkdir -p "$outputPath"
 
 statusCheck="\n    Starting: $(get_formatted_date)\n"
 
-url="https://www.youtube.com/watch?v=k1PV5squdbY&t=47s"
+while IFS= read -r line; do
+    
+    url="$line"
 
-if [ "$url" != "" ]; then
+    if [ "$url" != "" ]; then
+    
+        sysLogger i "🌐️ Refreshing ip\n"
+        nordvpn c italy
+        sleep 1s
 
-    # sysLogger i "🌐️ Refreshing ip\n"
-    # nordvpn c italy
-    # sleep 1s
+        statusCheck+="\nDownloading: $url\n  Started: $(get_formatted_date)"
 
-    statusCheck+="\nDownloading: $url\n  Started: $(get_formatted_date)"
+        #### Per 1440 2K 
+        # -f "bestvideo[height<=1440][fps<=60]+bestaudio/best" \
 
-
-    if [ "$userChoice" == "mp4" ] || [ "$userChoice" == "mkv" ]; then
+        #########################################################################
+        if [ "$userChoice" == "mp4" ] || [ "$userChoice" == "mkv" ]; then
             yt-dlp --config-location "$config" \
-            -f "bv*[height<=1080][fps<=60]+ba/b[height<=1080]" \
-            --remux-video "$userChoice" \
-            --embed-metadata \
-            --embed-thumbnail \
-            "$url"
+                -f "bestvideo[height<=1080][fps<=60]+bestaudio/best" \
+                --merge-output-format "$userChoice" \
+                "$url"
 
-        onComplete
+            onComplete
+        #########################################################################
+        elif [ "$userChoice" == "mp3" ]; then
+            yt-dlp --config-location "$config" \
+                -f bestaudio \
+                --extract-audio \
+                --audio-format "$userChoice" \
+                --audio-quality 256k \
+                "$url"
+            
+            onComplete
+        #########################################################################
+        else
+            statusCheck+="\n❌️ Error: no format / invalid format"
+        fi
 
-
-    elif [ "$userChoice" == "mp3" ]; then
-        yt-dlp --config-location "$config" \
-            -f "ba/bestaudio" \
-            -x \
-            --audio-format mp3 \
-            --audio-quality 0 \
-            --embed-metadata \
-            --embed-thumbnail \
-            "$url"
-        
-        onComplete
-
-
-    else
-        statusCheck+="\n❌️ Error: no format / invalid format"
     fi
 
-fi
 
-
+done < "$urls"
 
 statusCheck+="\n\n    ✅️ Done: $(get_formatted_date)\n" 
 echo -e "$statusCheck" >> "$urls"
