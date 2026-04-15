@@ -38,14 +38,6 @@ if [ -z "$alreadyUpdated" ]; then
 fi
 
 
-log_file_empty=$(cat "$urls")
-log_file_used=$(cat "$urls" | grep "✅️")
-
-# if [ -z "$log_file_empty" ] || [ "$log_file_used" != "" ]  ; then
-#    echo -e "❌️ File $urls empty or used, exiting\n...\n$(less $urls)"
-#    exit 1
-# fi
-
 
 grabFileName(){
     lastModified=$(ls -t "$outputPath" | head -1)
