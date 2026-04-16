@@ -194,7 +194,7 @@
    </metadata>
   </info>
  </bookmark>
- <bookmark href="file:///home/federico/Videos/Edit/Kden/ProxyRender">
+ <bookmark href="file:///home/federico/Videos/Edit/Kden/ProxyRender/">
   <title>Project Folder</title>
   <info>
    <metadata owner="http://freedesktop.org">
@@ -202,6 +202,7 @@
    </metadata>
    <metadata owner="http://www.kde.org">
     <OnlyInApp>kdenlive</OnlyInApp>
+    <ID>1748098037/0</ID>
    </metadata>
   </info>
  </bookmark>
