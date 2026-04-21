@@ -60,8 +60,6 @@ onComplete(){
 
 #########################################################################
 
-
-
 formats=(mp3 mp4) #### mkv -- case sensitive -- wav does not support quality control, always downloads BIG files (~20MB per min)
 
 userChoice=$(printf "%s\n" "${formats[@]}" | fzf --height=1% --border --prompt="Format > ")
@@ -81,8 +79,6 @@ if [ "$playlist" == "Yes" ]; then
 config=$(mktemp)
 cat <<EOF > "$config"
 --cookies-from-browser firefox:"$cookieFolder"
---js-runtime node
---extractor-args "youtube:player_client=android"
 --paths "$PlaylistOutputPath"    
 -o "%(title)s.%(ext)s"
 -o "%(playlist_index)s - %(title)s.%(ext)s"
@@ -95,8 +91,6 @@ else
 config=$(mktemp)
 cat <<EOF > "$config"
 --cookies-from-browser firefox:"$cookieFolder"
---js-runtime node
---extractor-args "youtube:player_client=android"
 --paths "$outputPath"    
 -o "%(title)s.%(ext)s"
 EOF
@@ -108,9 +102,9 @@ mkdir -p "$outputPath"
 
 #########################################################################
 
-statusCheck="\n    Starting: $(get_formatted_date)\n"
+statusCheck="Starting: $(get_formatted_date)"
 
-url="https://www.youtube.com/watch?v=k1PV5squdbY&t=47s"
+url=""
 
 if [ "$url" != "" ]; then
 
@@ -122,7 +116,7 @@ if [ "$url" != "" ]; then
 
 
     if [ "$userChoice" == "mp4" ] || [ "$userChoice" == "mkv" ]; then
-            yt-dlp --config-location "$config" \
+        yt-dlp --config-location "$config" \
             -f "bv*[height<=1080][fps<=60]+ba/b[height<=1080]" \
             --remux-video "$userChoice" \
             --embed-metadata \
@@ -153,9 +147,10 @@ fi
 
 
 
-statusCheck+="\n\n    ✅️ Done: $(get_formatted_date)\n" 
+statusCheck+="\n✅️ Done: $(get_formatted_date)\n" 
 echo -e "$statusCheck" >> "$urls"
 
+
 #### Extras
-echo -e "$outputPath" | python3 "$HOME/Nextcloud/Python/scripts/FileModder/file_renamer.py"
-echo -e "$outputPath" | python3 "$HOME/Nextcloud/Python/scripts/FileModder/mkv_converter.py"
+echo -e "$outputPath" | python3 "$PYscripts/FileModder/file_renamer.py"
+echo -e "$outputPath" | python3 "$PYscripts/FileModder/mkv_converter.py"
