@@ -106,7 +106,7 @@ statusCheck="Starting: $(get_formatted_date)"
 
 url=""
 
-if [ "$url" != "" ]; then
+if [ -n "$url" ]; then
 
     # sysLogger i "🌐️ Refreshing ip\n"
     # nordvpn c italy
@@ -140,7 +140,7 @@ if [ "$url" != "" ]; then
 
 
     else
-        statusCheck+="\n❌️ Error: no format / invalid format"
+        statusCheck+="\n❌️ Error: invalid format: $userChoice"
     fi
 
 fi
