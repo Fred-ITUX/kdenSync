@@ -2,8 +2,9 @@
 if [ -f "$HOME/.bash_UT"        ]; then . "$HOME/.bash_UT"       ; else echo -e "[CRITICAL ERROR] Bash module not found: $HOME/.bash_UT"       ; exit 1; fi        
 
 
-BKPath="/media/federico/SSD1TB/Projects/2-TempBKP"
+# BKPath="/media/federico/SSD1TB/Projects/2-TempBKP"
 # BKPath="/media/federico/SSD450GB/TempBKP"
+BKPath="/media/federico/HDD2TB/Edit/Projects/2-TempBKP"
 
 path="$HOME/Videos/Edit/Projects"
 
