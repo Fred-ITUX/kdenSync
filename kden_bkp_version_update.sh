@@ -1,5 +1,4 @@
 #!/bin/bash
-if [ -f "$HOME/.bash_aliases"   ]; then . "$HOME/.bash_aliases"  ; else echo -e "[CRITICAL ERROR] Bash module not found: $HOME/.bash_aliases"  ; exit 1; fi
 if [ -f "$HOME/.bash_functions" ]; then . "$HOME/.bash_functions"; else echo -e "[CRITICAL ERROR] Bash module not found: $HOME/.bash_functions"; exit 1; fi
 if [ -f "$HOME/.bash_UT"        ]; then . "$HOME/.bash_UT"       ; else echo -e "[CRITICAL ERROR] Bash module not found: $HOME/.bash_UT"       ; exit 1; fi          
 
