@@ -25,7 +25,7 @@ if [ -z "$alreadyUpdated" ]; then
 
     echo -e "\nChecking for updates...\n"
    {   
-    get_sys_Info
+    getSysInfoStart
 
     echo -e "\n    • yt-dlp -U update:"
     yt-dlp -U
