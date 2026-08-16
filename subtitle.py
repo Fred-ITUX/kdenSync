@@ -79,8 +79,13 @@ if SHORTS == "y":
 
 #### Cleans file names
 def sanitize_filename(text):
-    text = text.strip().replace(" ", "_")
-    return re.sub(r"[^\w\-]", "", text)
+    try:
+        text = text.strip().replace(" ", "_")
+        return re.sub(r"[^\w\-]", "", text)
+
+    except Exception as e:
+        print(f'sanitize_filename ERROR: {e}')
+
 
 
 #############################################################################
@@ -88,46 +93,45 @@ def sanitize_filename(text):
 
 
 def create_image_with_text(text, output_filepath, font_size):
-    # Create a new image with a transparent background
-    image = Image.new("RGBA", (IMAGE_WIDTH, IMAGE_HEIGHT), (255, 255, 255, 0))
-    draw = ImageDraw.Draw(image)
-    
     try:
-        font = ImageFont.truetype(FONT_PATH, font_size)
-    except IOError:
-        print(f"Could not load font at {FONT_PATH}. Please ensure the path is correct.")
-        return
+        # Create a new image with a transparent background
+        image = Image.new("RGBA", (IMAGE_WIDTH, IMAGE_HEIGHT), (255, 255, 255, 0))
+        draw = ImageDraw.Draw(image)
+        
+        try:
+            font = ImageFont.truetype(FONT_PATH, font_size)
+        except IOError:
+            print(f"Could not load font at {FONT_PATH}. Please ensure the path is correct.")
+            return
 
 
-    #### Textbox
-    bbox = draw.textbbox((0, 0), text, font=font)
-    text_width = bbox[2] - bbox[0]
-    text_height = bbox[3] - bbox[1]
-    x = (IMAGE_WIDTH - text_width) // 2
-    y = (IMAGE_HEIGHT - text_height) // 2
+        #### Textbox
+        bbox = draw.textbbox((0, 0), text, font=font)
+        text_width = bbox[2] - bbox[0]
+        text_height = bbox[3] - bbox[1]
+        x = (IMAGE_WIDTH - text_width) // 2
+        y = (IMAGE_HEIGHT - text_height) // 2
 
 
 
-    #### Draw shadow/outline by drawing the text at multiple offset positions.
-    shadow_positions = [
-        (x + SHADOW_OFFSET[0], y + SHADOW_OFFSET[1]),
-        (x - SHADOW_OFFSET[0], y - SHADOW_OFFSET[1]),
-        (x + SHADOW_OFFSET[0], y - SHADOW_OFFSET[1]),
-        (x - SHADOW_OFFSET[0], y + SHADOW_OFFSET[1])
-    ]
-    for pos in shadow_positions:
-        draw.text(pos, text, font=font, fill=SHADOW_COLOR)
+        #### Draw shadow/outline by drawing the text at multiple offset positions.
+        shadow_positions = [
+            (x + SHADOW_OFFSET[0], y + SHADOW_OFFSET[1]),
+            (x - SHADOW_OFFSET[0], y - SHADOW_OFFSET[1]),
+            (x + SHADOW_OFFSET[0], y - SHADOW_OFFSET[1]),
+            (x - SHADOW_OFFSET[0], y + SHADOW_OFFSET[1])
+        ]
+        for pos in shadow_positions:
+            draw.text(pos, text, font=font, fill=SHADOW_COLOR)
 
-    #### Draw the main text on top of the shadow
-    draw.text((x, y), text, font=font, fill=TEXT_COLOR)
+        #### Draw the main text on top of the shadow
+        draw.text((x, y), text, font=font, fill=TEXT_COLOR)
 
-    #### Save the image as a PNG (supports transparency)
-    try:
+        #### Save the image as a PNG (supports transparency)
         image.save(output_filepath)
-        #print(f"Image saved as {output_filepath}")
+  
     except Exception as e:
-        print(f"Error saving image: {e}")
-
+        print(f'create_image_with_text ERROR: {e}')
 
 
 #############################################################################
@@ -135,57 +139,62 @@ def create_image_with_text(text, output_filepath, font_size):
 
 
 def main():
+    try:
 
-    #### Output dir check
-    if not os.path.exists(OUTPUT_DIR):
-        try:
-            os.makedirs(OUTPUT_DIR)
-            print(f"Created directory: {OUTPUT_DIR}")
-        except Exception as e:
-            print(f"Error creating directory {OUTPUT_DIR}: {e}")
+        #### Output dir check
+        if not os.path.exists(OUTPUT_DIR):
+            try:
+                os.makedirs(OUTPUT_DIR)
+                print(f"Created directory: {OUTPUT_DIR}")
+            except Exception as e:
+                print(f"Error creating directory {OUTPUT_DIR}: {e}")
+                return
+
+
+        #### Keep track of what you are doing
+        if SHORTS == "y":
+            input_text = input(f"✅ Shorts MAX {maxLen}: ").strip()
+        else: 
+            input_text = input(f"❌ Shorts MAX {maxLen}: ").strip()
+        
+
+        if not input_text:
+            print("No text entered. Exiting.")
             return
 
 
-    #### Keep track of what you are doing
-    if SHORTS == "y":
-        input_text = input(f"✅ Shorts MAX {maxLen}: ").strip()
-    else: 
-        input_text = input(f"❌ Shorts MAX {maxLen}: ").strip()
-    
-
-    if not input_text:
-        print("No text entered. Exiting.")
-        return
-
-
-    #### Clear text to create filename
-    base_filename = sanitize_filename(input_text)
-    
-
-
-
-    #### Single long word
-    if len(input_text) > maxLen and len(input_text) <= singleWordMaxLen  and " " not in(input_text):
-        output_file = os.path.join(OUTPUT_DIR, f"{base_filename}.png")
-        create_image_with_text(input_text, output_file, FONT_SIZE)
+        #### Clear text to create filename
+        base_filename = sanitize_filename(input_text)
         
 
-    elif len(input_text) > maxLen:
-        print(f"maxLen: {maxLen} | input len: {len(input_text)}")
-        mid = len(input_text) // 2
-        part1 = input_text[:mid].strip()
-        part2 = input_text[mid:].strip()
+
+
+        #### Single long word # and len(input_text) <= singleWordMaxLen  
+        if len(input_text) > maxLen and " " not in(input_text):
+            output_file = os.path.join(OUTPUT_DIR, f"{base_filename}.png")
+            create_image_with_text(input_text, output_file, FONT_SIZE)
+            
+
+        elif len(input_text) > maxLen:
+            print(f"maxLen: {maxLen} | input len: {len(input_text)}")
+            mid = len(input_text) // 2
+            part1 = input_text[:mid].strip()
+            part2 = input_text[mid:].strip()
+            
+            output_file1 = os.path.join(OUTPUT_DIR, f"{base_filename}_part1.png")
+            output_file2 = os.path.join(OUTPUT_DIR, f"{base_filename}_part2.png")
+            create_image_with_text(part1, output_file1, FONT_SIZE)
+            create_image_with_text(part2, output_file2, FONT_SIZE)
+            print(f"Created two images: '{output_file1}' and '{output_file2}'.")
         
-        output_file1 = os.path.join(OUTPUT_DIR, f"{base_filename}_part1.png")
-        output_file2 = os.path.join(OUTPUT_DIR, f"{base_filename}_part2.png")
-        create_image_with_text(part1, output_file1, FONT_SIZE)
-        create_image_with_text(part2, output_file2, FONT_SIZE)
-        print(f"Created two images: '{output_file1}' and '{output_file2}'.")
+        else:
+            output_file = os.path.join(OUTPUT_DIR, f"{base_filename}.png")
+            create_image_with_text(input_text, output_file, FONT_SIZE)
+            #print(f"Created one image: '{output_file}'.")
     
-    else:
-        output_file = os.path.join(OUTPUT_DIR, f"{base_filename}.png")
-        create_image_with_text(input_text, output_file, FONT_SIZE)
-        #print(f"Created one image: '{output_file}'.")
+    except Exception as e:
+        print(f'main ERROR: {e}')
+
 
 if __name__ == "__main__":
     main()
