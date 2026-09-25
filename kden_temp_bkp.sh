@@ -1,5 +1,5 @@
 #!/bin/bash
-if [ -f "$HOME/.bash_common" ]; then source "$HOME/.bash_common"; else echo -e "[CRITICAL ERROR] Bash module not found: $HOME/.bash_common" ; fi        
+if [ -f "$HOME/.bash_common" ]; then source "$HOME/.bash_common"; else echo "[CRITICAL ERROR] Bash module not found: "$HOME/.bash_common"" ; exit 1; fi        
 
 
 # BKPath="/media/federico/SSD1TB/Projects/2-TempBKP"
