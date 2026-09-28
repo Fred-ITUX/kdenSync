@@ -1,41 +1,48 @@
 #!/bin/bash
-if [ -f "$HOME/.bash_common" ]; then source "$HOME/.bash_common"; else echo "[CRITICAL ERROR] Bash module not found: "$HOME/.bash_common"" ; exit 1; fi        
+set -uo pipefail
+if [ -f "$HOME/.bash_common" ]; then source "$HOME/.bash_common"; else echo "[CRITICAL ERROR] Bash module not found: "$HOME/.bash_common"" ; exit 1; fi          
+DEBUG=false     ####    true     false
 
 
-# BKPath="/media/federico/SSD1TB/Projects/2-TempBKP"
-# BKPath="/media/federico/SSD450GB/TempBKP"
-BKPath="/media/federico/HDD2TB/Edit/Projects/2-TempBKP"
+
+# BKPath="/media/federico/HDD2TB/Edit/Projects/2-TempBKP"
+BKPath="$HOME/Downloads"
 
 path="$HOME/Videos/Edit/Projects"
 
-echo -e "Choose the project to backup:"
 
-
-userChoice=$(ls "$path" | fzf --height=20% --border --prompt="Project > ")
+userChoice=$(find "$path" -mindepth 1 -maxdepth 1 -printf '%f\n' | sort | fzf --height=40% --border --prompt="Choose the project to backup > ")
 
 
 if [ -z "$userChoice" ]; then sysLogger e "No project selected, exiting"; exit 1; fi
 
 
-fileList=$(ls "$path/$userChoice")
-
-
-kdenFolder="$path/$userChoice/"$( echo -e "$fileList" | grep -i "kdenfiles" ) #### kdenFolder="$path/$userChoice/2-KdenFiles"
-
-
-robbbaFolder="$path/$userChoice/"$(echo -e "$fileList" | grep -i "ROBBBA" ) #### robbbaFolder="$path/$userChoice/1-"$userChoice"_ROBBBA"
-
-
+projectFolder=""$path"/"$userChoice""
 bkpFolder="$BKPath"/"$(get_file_date)"_"$userChoice"_BKP
-mkdir "$bkpFolder"
 
 
-cp -r "$kdenFolder" "$bkpFolder"
-cp -r "$robbbaFolder" "$bkpFolder"
+foldersToBkp=(
+    "kdenfiles"
+    "stuff"
+    # "robbba" #### legacy version
+)
 
-if [ -d "$bkpFolder" ]; then
 
-    if [ "$(ls -A "$bkpFolder" )" ]; then sysLogger i "Files copied to $bkpFolder"    
-    else sysLogger e "Folder created but file not copied $bkpFolder"; fi
+mkdir "$bkpFolder" || { sysLogger e "Backup folder creation failed"; }
 
-else sysLogger e "Error creating backup folder $bkpFolder"; fi
+
+for folder in "${foldersToBkp[@]}"; do
+    f="$( find "$projectFolder"/ -type d -iname "*$folder*" )" 
+    sysLogger DEBUG "Copying "$f" into "$bkpFolder""
+    cp -r "$f" "$bkpFolder" || { sysLogger e "Copy failed "$f""; }
+done
+
+
+
+
+
+if [ -z "$(ls -A "$bkpFolder" )" ]; then
+    sysLogger e "Backup folder appears to be empty."
+else
+    sysLogger DEBUG "Backup folder filled"
+fi

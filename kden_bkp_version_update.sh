@@ -1,97 +1,56 @@
 #!/bin/bash
-if [ -f "$HOME/.bash_functions" ]; then source "$HOME/.bash_functions"; else echo -e "[CRITICAL ERROR] Bash module not found: $HOME/.bash_functions"; exit 1; fi
+set -euo pipefail
 if [ -f "$HOME/.bash_common" ]; then source "$HOME/.bash_common"; else echo "[CRITICAL ERROR] Bash module not found: "$HOME/.bash_common"" ; exit 1; fi          
+DEBUG=false     ####    true     false
+
 
 path="$HOME/Videos/Edit/Projects"
 
-userChoice=$(ls "$path" | fzf --height=20% --border --prompt="Project > ")
-
-fileList=$(ls "$path/$userChoice")
-
-
-if [ -z "$userChoice" ]; then sysLogger e "No project selected. Exiting."; exit 1; fi
-
-
-kdenFolder="$userChoice/"$( echo -e "$fileList" | grep -i "kdenfiles" )
-
-kdenFilesPath="$path/$kdenFolder"
-
-echo -e "Kden Files Path: $kdenFilesPath\n"
-
-cd "$kdenFilesPath"
-
-echo -e "Choose the version to backup:"
-
-firstFile=$(ls "$kdenFilesPath" | fzf --height=20% --border --prompt="File > ")
-
-
-if [ -z "$firstFile" ]; then sysLogger e "No file selected. Exiting."; exit 1 ; fi
-
-
 ext=".kdenlive"
 
-#### If matches, remove the .kdenlive
-if [[ $firstFile == *"$ext" ]]; then base="${firstFile%"$ext"}"
-else sysLogger e "Filename doesn't end in $ext"; exit 1; fi
+if [ ! -d "$path" ]; then
+    sysLogger e "Folder "$path" not found, exiting"; exit 1
+fi
 
-#### Pull off the trailing underscore + digits
-if [[ $base =~ ^(.+)_([0-9]+)$ ]]; then
+#### Fuzzy find the project
+userChoice=$(find "$path" -mindepth 1 -maxdepth 1 -printf '%f\n' | sort | fzf --height=40% --border --prompt="Project > ")
 
-prefix="${BASH_REMATCH[1]}"
-num="${BASH_REMATCH[2]}"
+projectFolder=""$path"/"$userChoice""
 
-else sysLogger e "No trailing _number found in $base"; exit 1; fi
-
+sysLogger DEBUG "Project folder: $projectFolder"
 
 
-#### Increment the version number ( ..._X.kdenlive )
-secondNum=$(( num + 1 ))
-thirdNum=$(( secondNum + 1 ))
+#### Match case-insensitive the literal string 'kdenfile' in a folder's name
+kdenFilesFolder=$( find "$projectFolder"/ -type d -iname "*kdenfile*" )
 
 
-secondFile="${prefix}_${secondNum}${ext}"
-thirdFile="${prefix}_${thirdNum}${ext}"
-
-
-#### Files exists, proceed with update and backup
-if [ -f "$secondFile" ] && [ -f "$thirdFile" ]; then
-
-    bkpNewFolder="$kdenFilesPath"/bkp_"$(get_file_date)"
-    mkdir "$bkpNewFolder"
-
-    sysLogger i "\nCreating: $bkpNewFolder\n"
-
-    sysLogger i "Copying into the $bkpNewFolder: 
-    "$kdenFilesPath"/"$firstFile"  
-    "$kdenFilesPath"/"$secondFile" 
-    "$kdenFilesPath"/"$thirdFile"    
-    \n\n"
-
-    cp "$kdenFilesPath"/"$firstFile"    "$bkpNewFolder"
-    cp "$kdenFilesPath"/"$secondFile"   "$bkpNewFolder"
-    cp "$kdenFilesPath"/"$thirdFile"    "$bkpNewFolder"
-
-    sysLogger i "Updating versions:
-    "$kdenFilesPath"/"$firstFile"   "$kdenFilesPath"/"$secondFile"
-    "$kdenFilesPath"/"$firstFile"   "$kdenFilesPath"/"$thirdFile"
-    \n\n"
-
-    cp "$kdenFilesPath"/"$firstFile"  "$kdenFilesPath"/"$secondFile"
-    cp "$kdenFilesPath"/"$firstFile"  "$kdenFilesPath"/"$thirdFile"
-
-
-#### If files doesn't exists, create them by copying from the origin
-else 
-    
-    sysLogger w "\nFiles did not exist, copying...\n"
-    cp "$kdenFilesPath"/"$firstFile" "$kdenFilesPath"/"$secondFile"
-    cp "$kdenFilesPath"/"$firstFile" "$kdenFilesPath"/"$thirdFile"
-
-    sysLogger i "Files created: 
-        "$kdenFilesPath"/"$secondFile"
-        "$kdenFilesPath"/"$thirdFile""   
+if [ -z "$kdenFilesFolder" ] || [ ! -d "$kdenFilesFolder" ]; then
+    sysLogger e "Invalid folder: "$kdenFilesFolder""; exit 1
 fi
 
 
-  
+bkpFolder=""$kdenFilesFolder"/bkp_"$(get_file_date)""
 
+mkdir -p "$bkpFolder" || { sysLogger e "Backup folder creation failed"; exit 1; }
+
+sysLogger DEBUG "Creating folder "$bkpFolder""
+
+
+
+sysLogger DEBUG "Backing up all '.kdenlive' files under ""$kdenFilesFolder"""
+find "$kdenFilesFolder" -mindepth 1 -maxdepth 1 -type f -iname "*${ext}" -exec cp -t "$bkpFolder" {} +
+
+
+mainFile="$(find "$kdenFilesFolder" -mindepth 1 -maxdepth 1 -type f -regextype posix-extended -iregex '.*/.*_main\.'"${ext:1}"'$')"
+
+sysLogger DEBUG "Main file found: "$mainFile""
+
+
+sysLogger DEBUG "Overwriting every 'main_X.kdenlive' with the original 'main'"
+find "$kdenFilesFolder" -mindepth 1 -maxdepth 1 -type f -regextype posix-extended -iregex '.*/.*_main_[0-9]+'"${ext}"'$' -exec cp "$mainFile" {} \;
+
+if [ -z "$(ls -A "$bkpFolder" )" ]; then
+    sysLogger e "Backup folder appears to be empty."
+else
+    sysLogger DEBUG "Backup folder filled"
+fi
